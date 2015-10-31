@@ -1,0 +1,143 @@
+/* Body Elements */
+
+body{
+    background-image: url("../images/background.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: #3a3a3a;
+    height:1280px;
+    width:100%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Header/Nav Elements */
+
+.header{
+    position:absolute;
+    top: 20px;
+    left:0;
+    height:110px;
+    width:100%;
+    background-image: url("../images/header.png");
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+}
+#nav{
+    padding-left:176px;
+}
+#nav li{
+    list-style: none;
+    position:absolute;
+
+}
+#about {
+    position:relative;
+    top:70px;
+    left:176px;
+    background: url('../images/sprite.png') no-repeat -23px -18px;
+    width: 78px;
+    height: 40px;
+}
+#about:hover{
+    position:absolute;
+    top:70px;
+    left:176px;
+    background: url('../images/sprite.png') no-repeat -117px -18px;
+    width: 78px;
+    height: 40px;
+}
+#schedule{
+    position:relative;
+    top:70px;
+    left:262px;
+    background: url('../images/sprite.png') no-repeat -23px -74px;
+    width: 109px;
+    height: 40px;
+}
+#schedule:hover{
+    position:absolute;
+    top:70px;
+    left:262px;
+    background: url('../images/sprite.png') no-repeat -140px -74px;
+    width: 109px;
+    height: 40px;
+}
+#updates{
+    position:relative;
+    top:70px;
+    left:379px;
+    background: url('../images/sprite.png') no-repeat -23px -130px;
+    width: 99px;
+    height: 40px;
+}
+#updates:hover{
+    position:absolute;
+    top:70px;
+    left:379px;
+    background: url('../images/sprite.png') no-repeat -132px -130px;
+    width: 99px;
+    height: 40px;
+}
+#contact{
+    position:relative;
+    top:70px;
+    left:486px;
+    background: url('../images/sprite.png') no-repeat -23px -186px;
+    width: 99px;
+    height: 40px;
+}
+#contact:hover{
+    position:absolute;
+    top:70px;
+    left:486px;
+    background: url('../images/sprite.png') no-repeat -132px -186px;
+    width: 99px;
+    height: 40px;
+}
+#submit{
+    position:relative;
+    top:70px;
+    left:593px;
+    background: url('../images/sprite.png') no-repeat -23px -242px;
+    width: 84px;
+    height: 40px;
+}
+#submit:hover{
+    position:absolute;
+    top:70px;
+    left:593px;
+    background: url('../images/sprite.png') no-repeat -122px -242px;
+    width: 84px;
+    height: 40px;
+}
+#nav a{
+    width: 100px;
+    height:50px;
+    display:block;
+}
+ul li ul {
+    display:none;
+    visibility: hidden;
+    position:absolute;
+}
+ul li ul li {
+    display: inline-block;
+    position:relative;
+}
+ul li:hover ul{
+    position: absolute;
+    display: inline-block;
+    visibility: visible;
+    background-color: rgba(255,255,255,.66);
+    width:300px;
+    min-height:50px;
+    max-height: 200px;
+    box-shadow: 1px 1px 5px black;
+    padding-top:5%;
+}
+#nav li ul li{
+    list-style: none;
+    position: relative;
+    display:block;
+    font-size: 18pt;
+}
