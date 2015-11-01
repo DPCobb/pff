@@ -23,10 +23,14 @@ body{
     background-color: #ffffff;
 }
 #social{
-    position:absolute;
-    top:25px;
-    left:1200px;
+    position:relative;
+    margin-top:25px;
+    margin-right:5%;
+    float:right;
     font-size: 24pt;
+}
+#social label{
+    font-size: 14pt;
 }
 #social a{
     color:#080430;
@@ -119,15 +123,34 @@ body{
     width: 84px;
     height: 40px;
 }
+#share{
+    position:relative;
+    top:70px;
+    left:685px;
+    background: url('../images/sprite.png') no-repeat -23px -298px;
+    width: 84px;
+    height: 40px;
+}
+#share:hover{
+    position:absolute;
+    top:70px;
+    left:685px;
+    background: url('../images/sprite.png') no-repeat -122px -298px;
+    width: 84px;
+    height: 40px;
+}
 #nav a{
     width: 100px;
     height:50px;
     display:block;
 }
 ul li ul {
+    padding:0;
     display:none;
     visibility: hidden;
     position:absolute;
+    left:0;
+    text-align: center;
 }
 ul li ul li {
     display: inline-block;
@@ -135,18 +158,22 @@ ul li ul li {
 }
 ul li:hover ul{
     position: absolute;
+    left:-75px;
     display: inline-block;
     visibility: visible;
     background-color: rgba(255,255,255,.66);
-    width:300px;
+    width:250px;
     min-height:30px;
     max-height: 200px;
     box-shadow: 1px 1px 5px black;
-    padding-top:5%;
 }
 #nav li ul li{
     list-style: none;
     position: relative;
     display:block;
     font-size: 18pt;
+    padding:0
+}
+#nav li ul li:hover{
+    background-color: gray;
 }
