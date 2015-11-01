@@ -5,10 +5,16 @@
 
 		<title>Peekskill Film Festival</title>
 		<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link href="css/main.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 		<div class="header">
+			<section id="social">
+				<a href="https://www.facebook.com/peekskillfilmfest"><i class="fa fa-facebook"></i></a>
+				<a href="https://twitter.com/PKfilmfest"><i class="fa fa-twitter"></i></a>
+				<a href="https://instagram.com/peekskillfilmfest/"><i class="fa fa-instagram"></i></a>
+			</section>
 			<nav>
 				<ul id="nav">
 					<li id="about"> <a href="#"> </a>

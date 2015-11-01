@@ -22,6 +22,15 @@ body{
     background-repeat: no-repeat;
     background-color: #ffffff;
 }
+#social{
+    position:absolute;
+    top:25px;
+    left:1200px;
+    font-size: 30pt;
+}
+#social a{
+    color:#080430;
+}
 #nav{
     padding-left:176px;
 }
