@@ -150,8 +150,9 @@ ul li ul {
     visibility: hidden;
     position:absolute;
     left:0;
-    text-align: center;
+    text-align: left;
     line-height: 200%;
+
 }
 ul li ul li {
     display: inline-block;
@@ -160,11 +161,11 @@ ul li ul li {
 ul li:hover ul{
     position: absolute;
     top:40px;
-    left:-75px;
+    /*left:-25px;*/
     display: inline-block;
     visibility: visible;
     background-color: rgba(255,255,255,.66);
-    width:250px;
+    width:240px;
     min-height:30px;
     max-height: 200px;
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
@@ -174,7 +175,7 @@ ul li:hover ul{
     position: relative;
     display:block;
     font-size: 18pt;
-    padding:0
+    padding-left:2%;
 }
 #nav li ul li:hover{
     background-color: gray;
