@@ -159,6 +159,7 @@ ul li ul li {
 }
 ul li:hover ul{
     position: absolute;
+    top:40px;
     left:-75px;
     display: inline-block;
     visibility: visible;
@@ -166,7 +167,7 @@ ul li:hover ul{
     width:250px;
     min-height:30px;
     max-height: 200px;
-    box-shadow: 1px 1px 5px black;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }
 #nav li ul li{
     list-style: none;
