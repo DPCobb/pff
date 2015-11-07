@@ -191,25 +191,31 @@ ul li:hover ul{
 
 #showinfo {
     height: 70.3125%;
-    width: 54.6875%;
+    width: 52.6875%;
     background-color: rgba(255,255,255,.66);
     margin: 30px 2px 0 33px;
     display:inline-block;
+    padding:2%;
+}
+
+#showinfo p{
+    font-size: 18pt;
 }
 
 #events{
     height:32.96875%;
-    width:75%;
+    width:73%;
     background-color: rgba(255,255,255,.66);
     display:inline-block;
     float:right;
     margin: 30px 5% 0 0;
+    padding: 0 2%;
 }
 
 #eventupdates{
     clear:right;
     height:32.96875%;
-    width:65%;
+    width:63%;
     background-color: rgba(255,255,255,.66);
     display:inline-block;
     position:relative;
@@ -228,8 +234,11 @@ ul li:hover ul{
 #container h1{
     text-align: center;
     font-family: 'Abril Fatface', cursive;
-    text-shadow: 2px 2px 4px #fff;
     font-size: 24pt;
+}
+
+#container h2{
+    font-family: 'Abril Fatface', cursive;
 }
 
 /*Footer*/
