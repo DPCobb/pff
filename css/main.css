@@ -224,6 +224,13 @@ ul li:hover ul{
 
 }
 
+#container h1{
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    text-shadow: 2px 2px 4px #fff;
+    font-size: 24pt;
+}
+
 /*Footer*/
 
 footer{
@@ -235,3 +242,4 @@ footer{
     left:0;
     position:absolute;
 }
+
