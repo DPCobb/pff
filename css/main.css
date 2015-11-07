@@ -215,6 +215,7 @@ ul li:hover ul{
     position:relative;
     float:right;
     margin: 30px 10% 0 0;
+    padding:2%;
 }
 #wrapper{
     display:inline-block;
