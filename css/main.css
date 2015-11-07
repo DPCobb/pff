@@ -164,7 +164,7 @@ ul li:hover ul{
     /*left:-25px;*/
     display: inline-block;
     visibility: visible;
-    background-color: rgba(255,255,255,.66);
+    background-color: rgba(206,206,206,1.0);
     width:240px;
     min-height:30px;
     max-height: 200px;
@@ -179,4 +179,47 @@ ul li:hover ul{
 }
 #nav li ul li:hover{
     background-color: gray;
+}
+
+/* Content */
+
+#container {
+    width:95%;
+    height: 100%;
+    margin: 12.5% auto 0 auto;
+}
+
+#showinfo {
+    height: 70.3125%;
+    width: 54.6875%;
+    background-color: rgba(255,255,255,.66);
+    margin: 30px 2px 0 33px;
+    display:inline-block;
+}
+
+#events{
+    height:32.96875%;
+    width:75%;
+    background-color: rgba(255,255,255,.66);
+    display:inline-block;
+    float:right;
+    margin: 30px 5% 0 0;
+}
+
+#eventupdates{
+    clear:right;
+    height:32.96875%;
+    width:65%;
+    background-color: rgba(255,255,255,.66);
+    display:inline-block;
+    position:relative;
+    float:right;
+    margin: 30px 10% 0 0;
+}
+#wrapper{
+    display:inline-block;
+    width:40%;
+    height:100%;
+    float:right;
+
 }

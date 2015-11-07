@@ -57,7 +57,19 @@
 		</ul>
 	</nav>
 </div>
-<h1>This is the body</h1>
-<p>This is some text.</p>
+<div id="container">
+	<section id="showinfo">
+
+	</section>
+	<section id="wrapper">
+		<section id="events">
+
+		</section>
+		<section id="eventupdates">
+
+		</section>
+	</section>
+</div>
+
 </body>
 </html>
