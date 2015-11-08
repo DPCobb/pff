@@ -66,8 +66,19 @@
 		<p>6:00pm – Red Carpet reception</p>
 
 		<p>7:00pm – Film Screening – “But not for me”</p>
+		<blockquote><a href="https://www.facebook.com/ButNotForMeFilm/?fref=ts"><img src="https://scontent-iad3-1.xx.fbcdn.net/hphotos-xfa1/t31.0-8/10872929_707732239340762_3415794374361501619_o.jpg" alt="But Not For Me movie poster"></a>“But Not For Me" is a Brooklyn Film Festival winner,
 
-		<p>9:30pm – Live Q&A w/ Directors</p>
+			(Audience Award and Best Original Score.) The young star of the film, Peekskill resident Marcus
+
+			Carl Franklin, is an award winning actor,record producer, and entertainer,  best known for his
+
+			roles in the  HBO classic “Lackawanna Blues” and the  IFC Spirit Award Nominated  “ I'm Not
+
+			There.”  Franklin will then perform “20Something,”  the theme song of “But Not For Me." <br>
+			<a href="http://www.imdb.com/title/tt4292478/">More Info</a>
+		</blockquote>
+
+		<p>9:30pm – Live Q&amp;A w/ Directors</p>
 
 		<p>10pm – Original Film Score Performance</p>
 
@@ -83,6 +94,20 @@
 		<p>7pm – Red Carpet reception</p>
 
 		<p>8pm – “La Jaula de Oro” – “The Golden Dream” Screening</p>
+		<blockquote><a href="https://www.facebook.com/TheGoldenDreamFilm/?fref=ts"><img src="https://scontent-iad3-1.xx.fbcdn.net/hphotos-xfp1/t31.0-8/1399787_1530389700528950_7031555052061793978_o.jpg" alt="The Golden Dream movie poster"></a>The most awarded Mexican film in history -with over 80 international accolades including
+
+			9 Ariel awards and the Un Talent Regard from the Cannes Film Festival-- Diego Quemada-
+
+			Diez's acclaimed debut feature tells the story of three teenagers from the slums of Guatemala
+
+			who  travel to the USA in search of a better life. On their journey through Mexico they meet
+
+			Chauk, a Tzotzil teen  from Chiapas who doesn’t speak Spanish. Travelling together in cargo
+
+			trains,  walking on the railroad tracks, they will soon have to face a harsh reality.<br>
+			<a href="http://www.imdb.com/title/tt2042583/">More Info</a>
+
+		</blockquote>
 
 		<p>9:30pm – Latin Music Performance</p>
 
@@ -91,7 +116,7 @@
 		<section id="events">
 			<h1>Events and Workshops</h1>
 			<h2>Friday May 13th</h2>
-			<p>9:30pm – Live Q&A w/ Directors of "But Not For Me"</p>
+			<p>9:30pm – Live Q&amp;A w/ Directors of "But Not For Me"</p>
 			<h2>Saturday May 14th</h2>
 			<p>12:00-2pm – Film Workshop & Networking – Impolite Production Company</p>
 
