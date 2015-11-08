@@ -13,6 +13,12 @@ body{
 blockquote{
     font-style:italic;
 }
+blockquote img{
+    display:inline-block;
+    float:left;
+    width:15%;
+    margin-right: 10px;
+}
 
 /* Header/Nav Elements */
 
