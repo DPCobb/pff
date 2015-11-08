@@ -10,6 +10,10 @@ body{
     font-family: 'Josefin Sans', sans-serif;
 }
 
+blockquote{
+    font-style:italic;
+}
+
 /* Header/Nav Elements */
 
 .header{
@@ -199,7 +203,7 @@ ul li:hover ul{
 }
 
 #showinfo p{
-    font-size: 18pt;
+    font-size: 16pt;
 }
 
 #events{
@@ -241,6 +245,9 @@ ul li:hover ul{
     font-family: 'Abril Fatface', cursive;
 }
 
+#container a:link, #container a:visited, #container a:active, #container a:hover {
+    color:#000;
+}
 /*Footer*/
 
 footer{
