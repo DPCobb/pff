@@ -206,7 +206,6 @@ ul li:hover ul{
     margin: 30px 2px 0 33px;
     display:inline-block;
     padding:2%;
-    box-shadow: 5px 7px 10px #000;
     border:3px solid #fff;
 }
 
@@ -222,7 +221,6 @@ ul li:hover ul{
     float:right;
     margin: 30px 5% 0 0;
     padding: 0 2%;
-    box-shadow: 5px 7px 10px #000;
     border:3px solid #fff;
 }
 
@@ -236,7 +234,6 @@ ul li:hover ul{
     float:right;
     margin: 30px 10% 0 0;
     padding:2%;
-    box-shadow: 5px 7px 10px #000;
     border:3px solid #fff;
 }
 #wrapper{
