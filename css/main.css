@@ -1,10 +1,7 @@
 /* Body Elements */
 
 body{
-    background-image: url("../images/background.jpg");
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-color: #3a3a3a;
+    background: url("../images/background.jpg") top center no-repeat #3a3a3a;
     height:1280px;
     width:100%;
     font-family: 'Josefin Sans', sans-serif;
@@ -28,9 +25,7 @@ blockquote img{
     left:0;
     height:110px;
     width:100%;
-    background-image: url("../images/header.png");
-    background-repeat: no-repeat;
-    background-color: #ffffff;
+    background: url("../images/header.png") no-repeat #fff;
 }
 #social{
     position:relative;
@@ -178,7 +173,7 @@ ul li:hover ul{
     width:240px;
     min-height:30px;
     max-height: 200px;
-    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.75);
 }
 #nav li ul li{
     list-style: none;
