@@ -37,6 +37,9 @@ blockquote img{
     line-height:50%;
     margin: 0 auto 0 5px;
 }
+#title h1, #title h5{
+    margin-left:7%;
+}
 #nav{
     display:block;
     font-family: 'Josefin Sans', sans-serif;
