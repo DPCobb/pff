@@ -348,33 +348,36 @@ footer{
 
 @media only screen and (max-width: 630px) {
     #social{
-        position:absolute;
-        top:10px;
-        left:515px;
+        position:relative;
         display:inline-block;
     }
     #social a{
         display:inline-block;
     }
     #events{
-        width:90%;
+        width:85%;
         font-size: .75em;
         height:auto;
-        margin: 30px 0 0 0;
+        margin: 30px auto 0 auto;
     }
     #events h1, #eventupdates h1, #eventupdates a{
         font-size: 2em;
     }
     #eventupdates{
-        width:90%;
+        width:85%;
         word-wrap: break-word;
         font-size: .5em;
         padding:2%;
         float:right;
-        margin: 30px 0 0 0;
+        margin: 30px auto 0 auto;
         height:auto;
     }
     #eventupdates a {
         font-size: .5em;
     }
+    #wrapper, #container{
+        width:100%;
+        margin:auto;
+        padding:auto;
+        position: relative;
 }
