@@ -188,7 +188,7 @@ ul li ul li:hover{
 }
 
 #events{
-    height:32.96875%;
+    height:auto;
     width:73%;
     background-color: rgba(255,255,255,.66);
     display:inline-block;
@@ -200,7 +200,7 @@ ul li ul li:hover{
 
 #eventupdates{
     clear:right;
-    height:32.96875%;
+    height:auto;
     width:63%;
     background-color: rgba(255,255,255,.66);
     display:inline-block;
