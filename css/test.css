@@ -196,6 +196,7 @@ ul li ul li:hover{
     margin: 30px 5% 0 0;
     padding: 0 2%;
     border:3px solid #fff;
+    overflow: hidden;
 }
 
 #eventupdates{
@@ -209,6 +210,7 @@ ul li ul li:hover{
     margin: 30px 10% 0 0;
     padding:2%;
     border:3px solid #fff;
+    overflow: hidden;
 }
 #wrapper{
     display:inline-block;
