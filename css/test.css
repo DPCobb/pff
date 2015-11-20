@@ -303,9 +303,8 @@ footer{
     #events{
         width:85%;
         height:auto;
-        overflow:scroll;
         float:none;
-        margin: 2% auto 0 2%;
+        margin: 2% auto 0 10px;
 
     }
     #wrapper{
@@ -348,7 +347,9 @@ footer{
 
 @media only screen and (max-width: 630px) {
     #social{
-        position:relative;
+        position:absolute;
+        top:10px;
+        left:500px;
         display:inline-block;
     }
     #social a{
@@ -358,7 +359,7 @@ footer{
         width:85%;
         font-size: .75em;
         height:auto;
-        margin: 30px auto 0 10px;
+        margin: 30px auto auto auto;
         overflow:hidden;
     }
     #events h1, #eventupdates h1, #eventupdates a{
@@ -370,16 +371,10 @@ footer{
         font-size: .5em;
         padding:2%;
         float:right;
-        margin: 30px auto 0 auto;
+        margin: 30px auto;
         height:auto;
     }
     #eventupdates a {
         font-size: .5em;
-    }
-    #wrapper, #container {
-        width: 100%;
-        margin: auto;
-        padding: auto;
-        position: relative;
     }
 }
