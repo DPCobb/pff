@@ -358,7 +358,7 @@ footer{
         width:85%;
         font-size: .75em;
         height:auto;
-        margin: 30px auto 0 auto;
+        margin: 30px auto 0 10px;
         overflow:hidden;
     }
     #events h1, #eventupdates h1, #eventupdates a{
