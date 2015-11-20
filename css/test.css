@@ -375,9 +375,10 @@ footer{
     #eventupdates a {
         font-size: .5em;
     }
-    #wrapper, #container{
-        width:100%;
-        margin:auto;
-        padding:auto;
+    #wrapper, #container {
+        width: 100%;
+        margin: auto;
+        padding: auto;
         position: relative;
+    }
 }
