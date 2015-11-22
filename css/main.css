@@ -11,7 +11,7 @@
 body{
     background: url("../images/background.jpg") top center no-repeat #3a3a3a;
     height:1280px;
-    width:95%;
+    width:100%;
     font-family: 'Josefin Sans', sans-serif;
     margin:0 auto;
 }
@@ -83,7 +83,7 @@ blockquote img{
     margin:auto;
 }
 
-#nav a{
+#nav li a{
     height:40px;
     width:100px;
     text-align: center;
@@ -91,6 +91,14 @@ blockquote img{
     display:block;
     padding:auto;
     margin:15px auto 0 0;
+}
+#nav li ul li a{
+    text-decoration: none;
+    font-size:1em;
+    margin:auto;
+    height:auto;
+    width:100%;
+    text-align: left;
 }
 ul li:hover{
     background-image:url("../images/linkbg.png");
@@ -188,7 +196,7 @@ ul li ul li:hover{
 }
 
 #events{
-    height:32.96875%;
+    height:auto;
     width:73%;
     background-color: rgba(255,255,255,.66);
     display:inline-block;
@@ -196,11 +204,12 @@ ul li ul li:hover{
     margin: 30px 5% 0 0;
     padding: 0 2%;
     border:3px solid #fff;
+    overflow: hidden;
 }
 
 #eventupdates{
     clear:right;
-    height:32.96875%;
+    height:auto;
     width:63%;
     background-color: rgba(255,255,255,.66);
     display:inline-block;
@@ -209,6 +218,7 @@ ul li ul li:hover{
     margin: 30px 10% 0 0;
     padding:2%;
     border:3px solid #fff;
+    overflow: hidden;
 }
 #wrapper{
     display:inline-block;
@@ -238,6 +248,23 @@ ul li ul li:hover{
     display: block;
     height: 0;
     clear: both;
+}
+
+/* Contact Page*/
+
+#contact-info{
+    height: auto;
+    width: 50%;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,.66);
+    display:inline-block;
+    padding:2%;
+    border:3px solid #fff;
+    font-size:1em;
+    text-align: center;
+}
+#social-lg a{
+    font-size:3em;
 }
 /*Footer*/
 
@@ -301,9 +328,8 @@ footer{
     #events{
         width:85%;
         height:auto;
-        overflow:scroll;
         float:none;
-        margin: 2% auto 0 2%;
+        margin: 2% auto 0 10px;
 
     }
     #wrapper{
@@ -325,7 +351,6 @@ footer{
     }
     #eventupdates{
         width:90%;
-        overflow: scroll;
         word-wrap: break-word;
         font-size: .5em;
         padding:2%;
@@ -338,7 +363,6 @@ footer{
     }
     #events{
         width:90%;
-        overflow: scroll;
         font-size: .75em;
         height:auto;
         margin: 30px 0 0 0;
@@ -350,30 +374,29 @@ footer{
     #social{
         position:absolute;
         top:10px;
-        left:515px;
+        left:500px;
         display:inline-block;
     }
     #social a{
         display:inline-block;
     }
     #events{
-        width:90%;
-        overflow: scroll;
+        width:85%;
         font-size: .75em;
         height:auto;
-        margin: 30px 0 0 0;
+        margin: 30px auto auto auto;
+        overflow:hidden;
     }
     #events h1, #eventupdates h1, #eventupdates a{
         font-size: 2em;
     }
     #eventupdates{
-        width:90%;
-        overflow: scroll;
+        width:85%;
         word-wrap: break-word;
         font-size: .5em;
         padding:2%;
         float:right;
-        margin: 30px 0 0 0;
+        margin: 30px auto;
         height:auto;
     }
     #eventupdates a {
