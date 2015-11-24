@@ -9,7 +9,7 @@
 
 
 body{
-    background: url("../images/background.jpg") top center no-repeat #3a3a3a;
+    background: url("../images/background.jpg") top center no-repeat fixed #3a3a3a;
     height:1280px;
     width:100%;
     font-family: 'Josefin Sans', sans-serif;
@@ -75,7 +75,7 @@ blockquote img{
     font-size: .5em;
 }
 #fest, #about, #schedule, #updates, #contact, #submit, #share, .social{
-
+    font-weight:700;
     width:100px;
     height:40px;
     text-align:center;
@@ -182,19 +182,20 @@ ul li ul li:hover{
     width:95%;
     height: auto;
     margin: 1.5% auto 5% auto;
+    overflow:auto;
 }
 
 #showinfo {
     height: auto;
-    width: 100%;
+    width: 60%;
     overflow:auto;
+    float:left;
 }
 .film-desc{
-    width:40%;
+    width:90%;
     float:left;
     background-color: rgba(255,255,255,.66);
     margin: 2.34375% 0.15625% 0 2.578125%;
-    display:inline-block;
     padding:2%;
     border:3px solid #fff;
     clear:both;
@@ -230,33 +231,32 @@ ul li ul li:hover{
 
 #events{
     height:auto;
-    width:50%;
+    width:90%;
     background-color: rgba(255,255,255,.66);
-    display:inline-block;
-    margin: 30px 5% 30px 0;
+    margin: 30px 30px 0 auto;
     padding: 0 2%;
     border:3px solid #fff;
     overflow: hidden;
+    float:right;
 }
 
 #eventupdates{
     clear:right;
     height:auto;
-    width:30%;
+    width:90%;
     background-color: rgba(255,255,255,.66);
-    display:inline-block;
     position:relative;
-    margin: 30px auto;
-    padding:2%;
+    margin: 30px 30px 0 auto;
+    padding:0 2%;
     border:3px solid #fff;
     overflow: hidden;
+    float:right;
 }
 #wrapper{
-    clear:both;
-    width:80%;
+    width:30%;
     height:auto;
     margin:2% auto;
-    overflow:auto;
+    float:right;
 
 }
 
