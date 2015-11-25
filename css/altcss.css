@@ -9,8 +9,8 @@
 
 
 body{
-    background: url("../images/background.jpg") top center no-repeat fixed #3a3a3a;
-    height:1280px;
+    background: url("../images/background2.jpg") top center no-repeat fixed #3a3a3a;
+    height:auto;
     width:100%;
     font-family: 'Josefin Sans', sans-serif;
     margin:0 auto;
@@ -209,10 +209,7 @@ ul li ul li:hover{
     display:inline-block;
 }
 .trailer{
-    float:right;
-    border:3px solid #fff;
-    width:45%;
-    margin: 10% auto 0 auto;
+    margin: 2%;
 }
 .trailer:before, .film-desc:before{
     clear:both;
@@ -224,7 +221,7 @@ ul li ul li:hover{
 
 }
 #showinfo p{
-    font-size: 16pt;
+    font-size: 1.2em;
 }
 
 #events{
@@ -256,6 +253,19 @@ ul li ul li:hover{
     margin:2% auto;
     float:right;
 
+}
+
+#sponsors{
+    clear:right;
+    height:auto;
+    width:90%;
+    background-color: rgba(255,255,255,.66);
+    position:relative;
+    margin: 30px 30px 0 auto;
+    padding:0 2%;
+    border:3px solid #fff;
+    overflow: hidden;
+    float:right;
 }
 
 #container h1{
