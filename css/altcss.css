@@ -23,7 +23,7 @@ blockquote img{
     display:inline-block;
     float:left;
     width:15%;
-    margin: auto 0.78125% .2% auto;
+    margin: auto 0.78125% 1% auto;
 }
 
 #one, #title{
@@ -31,7 +31,7 @@ blockquote img{
     font-family: 'Limelight', cursive;
 }
 #one{
-    margin:.5% auto 0 auto;
+    margin:20px auto;
     padding:0;
     width:10%;
 }
@@ -39,8 +39,11 @@ blockquote img{
     line-height:50%;
     margin: 0 auto 0 5px;
 }
+#title h1{
+    font-size:30pt;
+}
 #title h1, #title h5{
-    margin-left:7%;
+    margin-left:4%;
 }
 #nav{
     display:block;
@@ -166,7 +169,7 @@ ul li ul li:hover{
     font-size: 16pt;
 }
 #social a{
-    display: block;
+    display: inline-block;
 }
 #social label{
     font-size: 14pt;
@@ -189,6 +192,22 @@ ul li ul li:hover{
     width: 60%;
     float:left;
 }
+
+#sched{
+    height: auto;
+    width: 60%;
+    float:left;
+    background-color: rgba(255,255,255,.66);
+    margin: 2.34375% 0.15625% 0 2.578125%;
+    display:inline-block;
+    padding:2%;
+    border:3px solid #fff;
+    font-size:1em;
+}
+
+#sched p{
+    clear:both;
+}
 .film-desc{
     width:90%;
     float:left;
@@ -209,19 +228,15 @@ ul li ul li:hover{
     display:inline-block;
 }
 .trailer{
-    margin: 2%;
+    border:3px solid #fff;
+    margin:2%;
 }
-.trailer:before, .film-desc:before{
-    clear:both;
-}
+
 .film-wrap{
     width:95%;
     margin: 0 auto;
     overflow:auto;
 
-}
-#showinfo p{
-    font-size: 1.2em;
 }
 
 #events{
