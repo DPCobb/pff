@@ -316,6 +316,11 @@ ul li ul li:hover{
     clear: both;
 }
 
+#map{
+    width:95%;
+    height:95%;
+}
+
 /* Contact Page*/
 
 #contact-info{

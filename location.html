@@ -71,11 +71,37 @@
 <div id="container">
     <section id="sched">
         <h2>Location Information</h2>
-        <p>Where, when, how to buy tickets etc.</p>
+        <div id="map">
+        </div>
     </section>
     <section id="dl-sched">
         <p>This area used for downloadable sched.</p>
     </section>
 </div>
 </body>
+<script type="text/javascript">
+var map;
+var myLatLng = {lat: 41.28995,lng: -73.91965};
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: myLatLng,
+    zoom: 17
+  });
+
+var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Peekskill Film Festival'
+  });
+  var infowindow = new google.maps.InfoWindow({
+    content: "<span style=\"font-weight:700;\">May 13-14 Peekskill Film Festival Location</span><hr> <p> The Paramount Theater <br>1008 Brown St. <br> Peekskill, NY <br> 10566"
+  });
+  marker.addListener('click', function() {
+   infowindow.open(map, marker);
+ });
+}
+</script>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK3jZfaQm1PxMDMwprgfTkMKO-QDQzKS0&callback=initMap">
+</script>
 </html>
