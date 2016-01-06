@@ -316,9 +316,17 @@ ul li ul li:hover{
     clear: both;
 }
 
-#map{
-    width:95%;
-    height:95%;
+#submit-btn{
+    height:50px;
+    width:200px;
+    display:inline-block;
+    font-size:2em;
+    padding-top:3%;
+    border-radius:5px;
+    background:#6C7A89;
+    text-decoration: none;
+    box-shadow: 2px 3px 7px #22313F;
+    text-align: center;
 }
 
 /* Contact Page*/
@@ -347,7 +355,34 @@ footer{
     text-align: center;
 }
 
+footer a:link{
+    color:#000;
+}
 
+/* Form */
+
+form{
+    display:block;
+}
+#email, #name, #info{
+    margin:5% auto 0 auto;
+    border:none;
+    font-size:1em;
+    border-radius:3px;
+    text-align: center;
+    width:98%;
+}
+
+#send{
+    font-size:1em;
+    height:30px;
+    width:100px;
+    display:inline-block;
+    position: relative;
+    border:none;
+    border-radius:5px;
+    background:#6C7A89;
+}
 
 
 @media only screen and (max-width: 860px) {
