@@ -38,6 +38,7 @@ blockquote img{
 #title{
     line-height:50%;
     margin: 0 auto 0 5px;
+    width:80%;
 }
 #title h1{
     font-size:30pt;
@@ -50,6 +51,7 @@ blockquote img{
     font-family: 'Josefin Sans', sans-serif;
     padding:0;
     margin-bottom:0;
+    
 }
 #nav ul{
     margin:0;
