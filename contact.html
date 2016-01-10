@@ -82,10 +82,13 @@
         </div>
     </section>
     <section id="dl-sched">
-        <form action="contact.php" method="post">
-            <input type="text" required="required" id="name" placeholder="Hi, what's your name?"/>
-            <input type="email" required="required" id="email" placeholder="What's your email?"/>
-            <textarea id="info" placeholder="What can we help you with?" rows="5"></textarea>
+        <form action="http://formspree.io/dancobb@gmail.com" method="POST">
+            <input type="text" required="required" id="name" name="name" placeholder="Hi, what's your name?"/>
+            <input type="email" required="required" id="email" name="_replyto" placeholder="What's your email?"/>
+            <textarea id="info" placeholder="What can we help you with?" name="body" rows="5"></textarea>
+            <input type="text" name="_gotcha" style="display:none" />
+            <input type="hidden" name="_subject" value="New Contact!" />
+            <input type="hidden" name="_next" value="" />
             <input type="submit" value="Send" id="send"/>
 
         </form>
