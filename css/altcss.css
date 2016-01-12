@@ -25,7 +25,16 @@ blockquote img{
     width:15%;
     margin: auto 0.78125% 1% auto;
 }
+.organize-logo{
+    width:60%;
+    height:auto;
+    display:inline-block;
+    margin:2%;
+}
 
+#field{
+    width:30%;
+}
 #one, #title{
     float:left;
     font-family: 'Limelight', cursive;
@@ -253,7 +262,7 @@ ul li ul li:hover{
 
 }
 
-#events{
+#events, #organize{
     height:auto;
     width:90%;
     background-color: rgba(255,255,255,.66);
@@ -263,7 +272,13 @@ ul li ul li:hover{
     overflow: hidden;
     float:right;
 }
-
+#organize{
+    margin-top:0;
+    text-align: center;
+}
+#organize h2{
+    text-align: left;
+}
 #eventupdates{
     clear:right;
     height:auto;
@@ -398,6 +413,19 @@ form{
     background:#6C7A89;
 }
 
+.sponsor-logo{
+    width: 20%;
+    height:auto;
+    display:inline-block;
+    margin:0 auto;
+}
+#pmount{
+    width:40%;
+}
+#dclogo{
+    width:12%;
+}
+
 
 @media only screen and (max-width: 860px) {
     #social{
@@ -422,7 +450,7 @@ form{
     #eventupdates a {
         font-size: .5em;
     }
-    #events{
+    #events, #organize{
         width:90%;
         font-size: .75em;
         height:auto;
@@ -453,7 +481,7 @@ form{
     #social a{
         display:inline-block;
     }
-    #events{
+    #events, #organize{
         width:85%;
         font-size: .75em;
         height:auto;
@@ -523,7 +551,7 @@ form{
         margin:auto;
         position: relative;
     }
-    #events{
+    #events, #organize{
         clear:both;
         width:98%;
         height:auto;
@@ -595,7 +623,12 @@ form{
     .film-desc{
         width:90%;
     }
-
+    .organize-logo{
+        width:50%;
+    }
+    #field{
+        width:25%;
+    }
 
 
 }

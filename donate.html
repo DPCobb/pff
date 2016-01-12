@@ -15,48 +15,6 @@
     <meta property="og:title" content="Peekskill Film Festival"/>
     <meta property="og:url" content="http://peekskillfilmfestival.org"/>
     <meta property="og:description" content="Come check out the Peekskill Film Festival on May 13th and 14th!"/>
-    <style>
-    body,html {
-        height:100%;
-    }
-        #map, #map2{
-            width:100%;
-            height:70%;
-        }
-        #sched{
-            height:100%;
-        }
-        #container{
-            height:100%;
-        }
-        @media only screen and (max-width: 630px) {
-            .header{
-                height:18.5%;
-            }
-            #container{
-                height:75%;
-            }
-        }
-        @media only screen and (max-width: 424px) {
-            .header{
-                height:auto;
-            }
-            #container{
-                height:75%;
-            }
-            #map{
-                height:50%;
-            }
-        }
-        @media only screen and (max-width: 630px) {
-            .header{
-                height:auto;
-            }
-            #container{
-                height:75%;
-            }
-        }
-    </style>
 </head>
 <body>
 <div class="header">
@@ -81,7 +39,7 @@
                 </li>
                 <li id="contact"><a href="#">Contact</a>
                     <ul class="sub">
-                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="contact.html">Donate</a></li>
                         <li><a href="contact.html">Become a Sponsor</a></li>
                         <li><a href="contact.html">General Inquiries</a></li>
                         <li><a href="contact.html">Email</a></li>
@@ -112,21 +70,27 @@
 
 </div>
 <div id="container">
-    <div id="sched">
-        <h2>Location Information</h2>
-        <div id="map"></div>
-        <p>Paramount Hudson Valley Theater
-            <br>1008 Brown St.
-            <br>Peekskill, NY
-            <br>10566
-        <div id="maptwo"></div>
-        <p>The Field Library
-            <br>4 Nelson Ave
-            <br>Peekskill, NY
-            <br>10566
-    </div>
+    <section id="contact-info">
+        <h1>How to donate:</h1>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="HLQCNK9B2EBF8">
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        <h2>You can reach the events organizers for more information through the following resources:</h2>
+        <p>
+            <a href="mailto:peekskillfilmfestival@gmail.com">Email: peekskillfilmfestival@gmail.com</a>
+        </p>
+        <h2>Social Media Sites:</h2>
+        <div id="social-lg">
+        <a href="https://www.facebook.com/peekskillfilmfest" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/PKfilmfest" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://instagram.com/peekskillfilmfest/" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+    </section>
     <section id="dl-sched">
-        <p><form action="http://formspree.io/peekskillfilmfestival@gmail.com" method="POST">
+        <form action="http://formspree.io/peekskillfilmfestival@gmail.com" method="POST">
             <input type="text" required="required" id="name" name="name" placeholder="Hi, what's your name?"/>
             <input type="email" required="required" id="email" name="_replyto" placeholder="What's your email?"/>
             <textarea id="info" placeholder="What can we help you with?" name="body" rows="5"></textarea>
@@ -135,47 +99,8 @@
             <input type="hidden" name="_next" value="thanks.html" />
             <input type="submit" value="Send" id="send"/>
 
-        </form></p>
+        </form>
     </section>
 </div>
-
-    <script type="text/javascript">
-
-var map;
-var myLatLng = {lat: 41.28995,lng: -73.91965};
-var myLatLngtwo = {lat: 41.2910757,lng: -73.9225798};
-function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: myLatLng,
-    zoom: 17
-  });
-
-var marker = new google.maps.Marker({
-    position: myLatLng,
-    map: map,
-    title: 'Peekskill Film Festival: The Paramount Theater'
-  });
-  var markerTwo = new google.maps.Marker({
-      position: myLatLngtwo,
-      map: map,
-      title: 'Peekskill Film Festival: The Field Library Theater'
-    });
-  var infowindow = new google.maps.InfoWindow({
-    content: "<span style=\"font-weight:700;\">May 13-14 Peekskill Film Festival Location</span><hr> <p> The Paramount Theater <br>1008 Brown St. <br> Peekskill, NY <br> 10566"
-  });
-  marker.addListener('click', function() {
-   infowindow.open(map, marker);
- });
- var infowindowTwo = new google.maps.InfoWindow({
-   content: "<span style=\"font-weight:700;\">May 13-14 Peekskill Film Festival Location</span><hr> <p> The Field Library <br>4 Nelson Ave. <br> Peekskill, NY <br> 10566"
- });
- markerTwo.addListener('click', function() {
-  infowindowTwo.open(map, markerTwo);
-});
-}
-    </script>
-
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8Yh4jvFBRW44M6WN3QXFBrUJPehn2RCk&callback=initMap"
-  type="text/javascript"></script>
 </body>
 </html>
