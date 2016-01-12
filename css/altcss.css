@@ -79,20 +79,21 @@ blockquote img{
 #nav li ul li{
     font-size: .5em;
 }
-#fest, #about, #schedule, #updates, #contact, #submit, #share, .social{
+#fest, #about, #schedule, #updates, #contact, #submit, #share, .social, #homenav{
     font-weight:700;
-    width:100px;
+    width:75px;
     height:40px;
     text-align:center;
     position: relative;
     display:block;
     padding:0;
     margin:0;
+    font-size:.75em
 }
 
 #nav li a{
     height:40px;
-    width:100px;
+    width:75px;
     text-align: center;
     position: relative;
     display:block;
@@ -167,7 +168,7 @@ ul li ul li:hover{
     display: inline-block;
     float:right;
     margin-top:1%;
-    margin-right:5%;
+    margin-right:10px;
     font-size: 16pt;
 }
 #social a{
@@ -487,6 +488,7 @@ form{
     #one{
         width:25%;
         height:auto;
+        margin:20px 0 0 0;
     }
     #title{
         width:70%;
@@ -512,7 +514,7 @@ form{
         display:none;
     }
     #showinfo{
-        width:95%;
+        width:100%;
         font-size: 12pt;
         height:auto;
     }
@@ -523,10 +525,10 @@ form{
     }
     #events{
         clear:both;
-        width:90%;
+        width:98%;
         height:auto;
-        margin: 10% auto 10% auto;
         float:left;
+        padding:3px;
 
     }
     #wrapper{
@@ -536,9 +538,9 @@ form{
     }
     #sponsors{
         clear:both;
-        margin:0 auto 0 auto;
         float:left;
-        width: 90%;
+        width: 98%;
+        padding:3px;
     }
     #title h1{
         font-size:2em;
@@ -547,9 +549,9 @@ form{
         text-align: center;
     }
     #nav li a{
-        width:50px;
+        width:55px;
         height:40px;
-        margin:15px 0 0 5px;
+        margin:15px auto 0 auto;
         padding:0;
         position:relative;
         text-align: center;
@@ -563,9 +565,9 @@ form{
     ul li ul {
         z-index: 10;
     }
-    #fest, #about, #schedule, #updates, #contact, #submit, #share, .social{
+    #fest, #about, #schedule, #updates, #contact, #submit, #share, .social, #homenav{
         font-weight:700;
-        width:60px;
+        width:50px;
         height:40px;
         text-align:center;
         position: relative;
@@ -585,6 +587,13 @@ form{
     }
     #nav{
         margin-left:-90px;
+    }
+    .film-wrap{
+        width:100%;
+        margin:0 auto;
+    }
+    .film-desc{
+        width:90%;
     }
 
 
