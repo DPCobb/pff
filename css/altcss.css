@@ -419,11 +419,36 @@ form{
     display:inline-block;
     margin:0 auto;
 }
-#pmount{
+#pmount, #wcc{
     width:40%;
 }
 #dclogo{
     width:12%;
+}
+.reg-button{
+    height:50px;
+    width:200px;
+    display:inline-block;
+    font-size:2em;
+    padding-top:3%;
+    border-radius:5px;
+    background:#6C7A89;
+    text-decoration: none;
+    box-shadow: 2px 3px 7px #22313F;
+    text-align: center;
+}
+.reg-button-sm{
+    height:25px;
+    width:100px;
+    display:inline-block;
+    font-size:1em;
+    padding-top:3%;
+    border-radius:5px;
+    background:#6C7A89;
+    text-decoration: none;
+    box-shadow: 2px 3px 7px #22313F;
+    text-align: center;
+    margin:0 auto 3% 35%;
 }
 
 
