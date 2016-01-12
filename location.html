@@ -144,9 +144,10 @@
 var map;
 var myLatLng = {lat: 41.28995,lng: -73.91965};
 var myLatLngtwo = {lat: 41.2910757,lng: -73.9225798};
+var myCenter = {lat: 41.2904717,lng: -73.9210747}
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
-    center: myLatLng,
+    center: myCenter,
     zoom: 17
   });
 
