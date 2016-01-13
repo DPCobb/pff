@@ -436,6 +436,7 @@ form{
     text-decoration: none;
     box-shadow: 2px 3px 7px #22313F;
     text-align: center;
+    display:none;
 }
 .reg-button-sm{
     height:25px;
@@ -449,6 +450,38 @@ form{
     box-shadow: 2px 3px 7px #22313F;
     text-align: center;
     margin:0 auto 3% 35%;
+}
+
+#gframe{
+    width:98%;
+    height:925px;
+}
+/*Table */
+.th-title{
+    font-size:2em;
+    font-weight:bold;
+}
+table{
+    width:98%;
+    margin:0 auto;
+    border-collapse: collapse;
+}
+
+th{
+    width:25%;
+    background:#6C7A89;
+    padding:2%;
+    border:1px solid #6C7A89;
+}
+.odd{
+    background:#ECECEC;
+}
+td{
+    padding:2%;
+    border:1px solid black;
+}
+tr{
+    background:#D2D7D3;
 }
 
 
@@ -654,6 +687,8 @@ form{
     #field{
         width:25%;
     }
-
+    #gframe{
+        height:1150px;
+    }
 
 }

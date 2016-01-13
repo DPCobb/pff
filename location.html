@@ -10,53 +10,20 @@
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
     <link href="css/altcss.css" rel="stylesheet" type="text/css">
+    <link href="css/locationstyle.css" rel="stylesheet" type="text/css">
     <meta property="og:image" content="http://peekskillfilmfestival.org/images/pff.png"/>
     <meta property="og:title" content="Peekskill Film Festival"/>
     <meta property="og:url" content="http://peekskillfilmfestival.org"/>
     <meta property="og:description" content="Come check out the Peekskill Film Festival on May 13th and 14th!"/>
-    <style>
-    body,html {
-        height:100%;
-    }
-        #map, #map2{
-            width:100%;
-            height:70%;
-        }
-        #sched{
-            height:100%;
-        }
-        #container{
-            height:100%;
-        }
-        @media only screen and (max-width: 630px) {
-            .header{
-                height:18.5%;
-            }
-            #container{
-                height:75%;
-            }
-        }
-        @media only screen and (max-width: 424px) {
-            .header{
-                height:auto;
-            }
-            #container{
-                height:75%;
-            }
-            #map{
-                height:50%;
-            }
-        }
-        @media only screen and (max-width: 630px) {
-            .header{
-                height:auto;
-            }
-            #container{
-                height:75%;
-            }
-        }
-    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script>
+        $(function() {
+            $( "#tabs" ).tabs();
+        });
+    </script>
 </head>
 <body>
 <div class="header">
@@ -83,7 +50,7 @@
                 <li id="contact"><a href="#">Contact</a>
                     <ul class="sub">
                         <li><a href="donate.html">Donate</a></li>
-                        <li><a href="contact.html">Become a Sponsor</a></li>
+                        <li><a href="newsponsor.html">Become a Sponsor</a></li>
                         <li><a href="contact.html">General Inquiries</a></li>
                     </ul>
                 </li>
@@ -113,30 +80,65 @@
 </div>
 <div id="container">
     <div id="sched">
-        <h2>Location Information</h2>
-        <div id="map"></div>
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">Paramount Theater Directions</a></li>
+                <li><a href="#tabs-2">Field Library Directions</a></li>
+            </ul>
+            <div id="tabs-1">
         <p>Paramount Hudson Valley Theater
             <br>1008 Brown St.
             <br>Peekskill, NY
             <br>10566
-        <div id="maptwo"></div>
+            <hr>
+            <P>FROM ROUTE 9<br>
+            Heading North to Peekskill – SOUTH STREET/HUDSON AVENUE EXIT, follow exit straight onto SOUTH STREET until it ends. At end- corner of South and Division streets, follow road sign instructing a RIGHT TURN and QUICK LEFT to Brown Street. Heading South to Peekskill – Main Street / Route 6 Exit. At the fourth traffic light make a RIGHT ON BANK STREET. Follow straight into parking lot adjacent to Paramount Center. TURN RIGHT ON BROWN STREET. Paramount Hudson Valley is on your right.
+            <p>FROM ROUTE 6<br>
+            Heading WEST into Peekskill – Peekskill is at the end of Route 6 on the East side of the Hudson River, follow into City of Peekskill, (past Mohegan Lake and Cortlandt Manor) at BANK STREET (three corners, on left are amazing metal sculptures, on right a thrift store) follow road sign to TURN LEFT and follow straight into parking lot adjacent to Paramount Hudson Valley. Park and walk straight to Brown Street and on right is Paramount Theater Hudson Valley. (Across from Bank of NY and Verizon)
+            <p>FROM ROUTES 202 &amp; 35<br>
+            Heading West into Peekskill, proceed past Hudson Valley Hospital, until the stop light at BROAD STREET, across from Fire House. Take a RIGHT onto BROAD STREET, then the first LEFT at the blinking yellow light, which is BROWN STREET. Proceed 5 blocks and the Paramount Hudson Valley will be on your right.
+            <p>FROM TACONIC PARKWAY<br>
+            Take PEEKSKILL 202 &amp; 35 exit (just before Yorktown from North or after from South) exit RIGHT and follow above directions.
+            <p>FROM METRO-NORTH RAIL ROAD<br>
+            Hudson East line. Station is approximately one mile from Paramount Hudson Valley. Take Taxi or walk left to Hudson Ave and uphill and turn left on South Street; follow Rt. 9 directions.
+            <p>FROM BEAR MOUNTAIN BRIDGE<br>
+            From West Side of Hudson River. Cross bridge, turn RIGHT, follow “goat path” down the mountain to Anvil Circle, exit opposite side and head SOUTH RT. 9. Follow directions for Route 9 from the North.
+            <p>FROM TAPPAN ZEE BRIDGE<br>
+            From the West Side of Hudson River. Cross bridge and take FIRST EXIT-RT 9 / TARRYTOWN, and head North on RT. 9 to Peekskill; follow directions for RT. 9 from South.
+            <p>OR<br>
+            Cross Bridge and take 287 towards White Plains. Take first exit towards SAW MILL RIVER PARKWAY/ TACONIC PARKWAY. Follow Saw Mill River Parkway until Taconic Exit, follow directions for Taconic Parkway.
+            <p>Parking Information<br>
+            Parking for theater-goers is available in the public municipal lot adjacent to our building, as well as on-street in front of the theater. There are also two multi-level parking garages located within walking distance of the theater. The closest parking garage is located on the corner of South James Street and Park Street opposite La Placita Market (at 1049 Park Street) and is approximately a block away. The second parking garage can be found on Nelson Avenue opposite the Field Library (at 4 Nelson Avenue) and is approximately 2 blocks away. As always, all metered parking in Peekskill is free after 5 PM and all day Saturday and Sunday.
+
+        </div>
+        <div id="tabs-2">
         <p>The Field Library
             <br>4 Nelson Ave
             <br>Peekskill, NY
             <br>10566
-    </div>
-    <section id="dl-sched">
-        <p><form action="http://formspree.io/peekskillfilmfestival@gmail.com" method="POST">
-            <input type="text" required="required" id="name" name="name" placeholder="Hi, what's your name?"/>
-            <input type="email" required="required" id="email" name="_replyto" placeholder="What's your email?"/>
-            <textarea id="info" placeholder="What can we help you with?" name="body" rows="5"></textarea>
-            <input type="text" name="_gotcha" style="display:none" />
-            <input type="hidden" name="_subject" value="New Contact!" />
-            <input type="hidden" name="_next" value="thanks.html" />
-            <input type="submit" value="Send" id="send"/>
+            <hr>
+            <p>From the Taconic or Routes 6, 35 & 202:
+Take Route 6, 35 or 202 West into Peekskill. They all eventually merge and become Main Street (follow all signs for 35 & 202; once inside the City, they change direction several times). Continue West on Main Street until you reach Nelson Avenue (watch for library directional signs). The Library's brick complex will be on the right, across from City Hall.
 
-        </form></p>
-    </section>
+<p>From Route 9:
+Take 9 North to the Main Street exit (Route 6, 35 & 202 East). At the ramp, turn left onto Main Street. At the second traffic light, the Library's brick complex will be on your right.
+
+<p>Public Transportation:
+Beeline buses, #14, #15, #16, and #17 stop in front of the library plaza.
+
+<p>Parking:
+Metered parking is available in the Main Street Lot next to City Hall across from the Library, and in the municipal garage across from the Library on Nelson Ave. Use Ramp B.
+</div>
+</div>
+    </div>
+    <div class="map-view">
+        <h2>The Paramount Theater</h2>
+        <div id="map"></div>
+    </div>
+    <div class="map-view">
+        <h2>The Field Library</h2>
+        <div id="mapTwo"></div>
+    </div>
 </div>
 
     <script type="text/javascript">
@@ -147,9 +149,14 @@ var myLatLngtwo = {lat: 41.2910757,lng: -73.9225798};
 var myCenter = {lat: 41.2904717,lng: -73.9210747}
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
-    center: myCenter,
+    center: myLatLng,
     zoom: 17
-  });
+});
+var mapViewTwo = new google.maps.Map(document.getElementById('mapTwo'), {
+  center: myLatLngtwo,
+  zoom: 17
+});
+
 
 var marker = new google.maps.Marker({
     position: myLatLng,
@@ -158,7 +165,7 @@ var marker = new google.maps.Marker({
   });
   var markerTwo = new google.maps.Marker({
       position: myLatLngtwo,
-      map: map,
+      map: mapViewTwo,
       title: 'Peekskill Film Festival: The Field Library Theater'
     });
   var infowindow = new google.maps.InfoWindow({
@@ -171,7 +178,7 @@ var marker = new google.maps.Marker({
    content: "<span style=\"font-weight:700;\">May 13-14 Peekskill Film Festival Location</span><hr> <p> The Field Library <br>4 Nelson Ave. <br> Peekskill, NY <br> 10566"
  });
  markerTwo.addListener('click', function() {
-  infowindowTwo.open(map, markerTwo);
+  infowindowTwo.open(mapViewTwo, markerTwo);
 });
 }
     </script>
