@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+
+    <title>Peekskill Film Festival</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Limelight' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="css/altcss.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <meta property="og:image" content="http://peekskillfilmfestival.org/images/pff.png"/>
+    <meta property="og:title" content="Peekskill Film Festival"/>
+    <meta property="og:url" content="http://peekskillfilmfestival.org"/>
+    <meta property="og:description" content="Come check out the Peekskill Film Festival on May 13th and 14th!"/>
+</head>
+<body>
+<div class="header">
+    <a href="index.html"><img src="images/headerslice_03.png" id="one" alt="header image"></a>
+    <section id="title"> <h1>Peekskill Film Festival</h1>
+        <h5>May 13-14 @ The Paramount Theater</h5>
+        <nav> </nav>
+        <script>
+            $(function(){
+                $("nav").load("nav.html");
+            });
+        </script>
+    </section>
+    <section id="social">
+        <a href="https://www.facebook.com/peekskillfilmfest" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/PKfilmfest" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://instagram.com/peekskillfilmfest/" target="_blank"><i class="fa fa-instagram"></i></a>
+    </section>
+    <!-- <section id="socialalt">
+            <a href="https://www.facebook.com/peekskillfilmfest" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/PKfilmfest" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://instagram.com/peekskillfilmfest/" target="_blank"><i class="fa fa-instagram"></i></a>
+        </section>-->
+
+</div>
+<div id="container">
+   <section id="sched">
+       <h1>Show Dates and Times</h1>
+       <h2>Friday May 13th</h2>
+
+       <p>6:00pm – Red Carpet reception</p>
+
+       <p>7:00pm – Film Screening – “But not for me”</p>
+       <blockquote><a href="https://www.facebook.com/ButNotForMeFilm/?fref=ts"><img src="https://scontent-iad3-1.xx.fbcdn.net/hphotos-xfa1/t31.0-8/10872929_707732239340762_3415794374361501619_o.jpg" alt="But Not For Me movie poster"></a>“But Not For Me" is a Brooklyn Film Festival winner,
+
+           (Audience Award and Best Original Score.) The young star of the film, Peekskill resident Marcus
+
+           Carl Franklin, is an award winning actor,record producer, and entertainer,  best known for his
+
+           roles in the  HBO classic “Lackawanna Blues” and the  IFC Spirit Award Nominated  “ I'm Not
+
+           There.”  Franklin will then perform “20Something,”  the theme song of “But Not For Me." <br>
+           <a href="http://www.imdb.com/title/tt4292478/">More Info</a>
+       </blockquote>
+
+       <p>9:30pm – Live Q&amp;A w/ Directors</p>
+
+       <p>10pm – Original Film Score Performance</p>
+
+       <h2>Saturday May 14th</h2>
+
+
+       <p>12:00-2pm – Film Workshop & Networking – Impolite Production Company</p>
+
+       <p>3pm-5pm – Independent Film Festival – Curated by Point of Order Productions</p>
+
+       <p>6pm – Dinner Break</p>
+
+       <p>7pm – Red Carpet reception</p>
+
+       <p>8pm – “La Jaula de Oro” – “The Golden Dream” Screening</p>
+       <blockquote><a href="https://www.facebook.com/TheGoldenDreamFilm/?fref=ts"><img src="https://scontent-iad3-1.xx.fbcdn.net/hphotos-xfp1/t31.0-8/1399787_1530389700528950_7031555052061793978_o.jpg" alt="The Golden Dream movie poster"></a>The most awarded Mexican film in history -with over 80 international accolades including
+
+           9 Ariel awards and the Un Talent Regard from the Cannes Film Festival-- Diego Quemada-
+
+           Diez's acclaimed debut feature tells the story of three teenagers from the slums of Guatemala
+
+           who  travel to the USA in search of a better life. On their journey through Mexico they meet
+
+           Chauk, a Tzotzil teen  from Chiapas who doesn’t speak Spanish. Travelling together in cargo
+
+           trains,  walking on the railroad tracks, they will soon have to face a harsh reality.<br>
+           <a href="http://www.imdb.com/title/tt2042583/">More Info</a>
+
+       </blockquote>
+
+       <p>9:30pm – Latin Music Performance</p>
+   </section>
+    <section id="dl-sched">
+        <form action="http://formspree.io/peekskillfilmfestival@gmail.com" method="POST">
+            <input type="text" required="required" id="name" name="name" placeholder="Hi, what's your name?"/>
+            <input type="email" required="required" id="email" name="_replyto" placeholder="What's your email?"/>
+            <textarea id="info" placeholder="What can we help you with?" name="body" rows="5"></textarea>
+            <input type="text" name="_gotcha" style="display:none" />
+            <input type="hidden" name="_subject" value="New Contact!" />
+            <input type="hidden" name="_next" value="thanks.html" />
+            <input type="submit" value="Send" id="send"/>
+
+        </form>
+    </section>
+</div>
+</body>
+</html>
