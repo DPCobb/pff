@@ -11,6 +11,7 @@
     <link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="css/altcss.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <meta property="og:image" content="http://peekskillfilmfestival.org/images/pff.png"/>
     <meta property="og:title" content="Peekskill Film Festival"/>
     <meta property="og:url" content="http://peekskillfilmfestival.org"/>
@@ -21,42 +22,12 @@
     <a href="index.html"><img src="images/headerslice_03.png" id="one"></a>
     <section id="title"> <h1>Peekskill Film Festival</h1>
         <h5>May 13-14 @ The Paramount Theater</h5>
-        <nav>
-            <ul id="nav">
-                <li id="homenav"><a href="index.html">Home</a></li>
-                <li id="fest"> <a href="#">Festival</a>
-                    <ul class="sub">
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="sched.html">Schedule</a></li>
-                        <li><a href="films.html">Films</a></li>
-                        <li><a href="register.html">Workshop Registration</a></li>
-                    </ul>
-                </li>
-                <li id="about"><a href="#">Info</a>
-                    <ul class="sub">
-                        <li><a href="location.html">Location</a></li>
-                        <li><a href="sponsors.html">Sponsors</a></li>
-                    </ul>
-                </li>
-                <li id="contact"><a href="#">Contact</a>
-                    <ul class="sub">
-                        <li><a href="donate.html">Donate</a></li>
-                        <li><a href="newsponsor.html">Become a Sponsor</a></li>
-                        <li><a href="contact.html">General Inquiries</a></li>
-
-                    </ul>
-                </li>
-                <li id="submit"><a href="submit.html">Submit</a>
-                </li>
-                <li id="share"><a href="#">Share</a>
-                    <ul class="sub">
-                        <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.peekskillfilmfestival.org" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
-                        <li><a href="https://twitter.com/home?status=Check%20out%20the%20Peekskill%20Film%20Festival!%20http%3A//www.peekskillfilmfestival.org" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
-                        <li><a href="https://plus.google.com/share?url=http%3A//www.peekskillfilmfestival.org" target="_blank"><i class="fa fa-google-plus"></i> Google+</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+        <nav> </nav>
+        <script>
+            $(function(){
+                $("nav").load("nav.html");
+            });
+        </script>
     </section>
     <section id="social">
         <a href="https://www.facebook.com/peekskillfilmfest" target="_blank"><i class="fa fa-facebook"></i></a>
