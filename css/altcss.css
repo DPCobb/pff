@@ -262,7 +262,7 @@ ul li ul li:hover{
 
 }
 
-#events, #organize{
+#events, #organize, #ticket-box{
     height:auto;
     width:90%;
     background-color: rgba(255,255,255,.66);
@@ -502,7 +502,15 @@ td{
 tr{
     background:#D2D7D3;
 }
-
+#tickets{
+    width:98%;
+    text-align:center;
+    margin:5% auto;
+}
+.ticketbtn{
+    margin:5% auto;
+    width:50%;
+}
 
 @media only screen and (max-width: 860px) {
     #social{
@@ -527,7 +535,7 @@ tr{
     #eventupdates a {
         font-size: .5em;
     }
-    #events, #organize{
+    #events, #organize, #ticket-box{
         width:90%;
         font-size: .75em;
         height:auto;
@@ -547,15 +555,7 @@ tr{
     }
 
 }
-#tickets{
-    width:98%;
-    text-align:center;
-    margin:0 auto;
-}
-.ticketbtn{
-    margin:0 auto;
-    width:50%;
-}
+
 
 @media only screen and (max-width: 630px) {
     #social{
@@ -567,7 +567,7 @@ tr{
     #social a{
         display:inline-block;
     }
-    #events, #organize{
+    #events, #organize, #ticket-box{
         width:85%;
         font-size: .75em;
         height:auto;
@@ -637,7 +637,7 @@ tr{
         margin:auto;
         position: relative;
     }
-    #events, #organize{
+    #events, #organize, #ticket-box{
         clear:both;
         width:98%;
         height:auto;
