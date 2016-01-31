@@ -547,6 +547,15 @@ tr{
     }
 
 }
+#tickets{
+    width:98%;
+    text-align:center;
+    margin:0 auto;
+}
+.ticketbtn{
+    margin:0 auto;
+    width:50%;
+}
 
 @media only screen and (max-width: 630px) {
     #social{
