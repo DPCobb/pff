@@ -360,6 +360,25 @@ ul li ul li:hover{
     font-size:1em;
     text-align: center;
 }
+#sponsor-info ul li:hover{
+    background: none;
+}
+#levels li{
+    text-decoration: none;
+    display:inline-block;
+}
+
+.sponsor-pg{
+    height: auto;
+    width: 50%;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,.66);
+    display:inline-block;
+    padding:2%;
+    border:3px solid #fff;
+    font-size:1em;
+    text-align:left;
+}
 #social-lg a{
     font-size:3em;
 }

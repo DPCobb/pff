@@ -263,7 +263,17 @@ ul li ul li:hover{
     font-size:1em;
     text-align: center;
 }
-
+.sponsor-pg{
+    height: auto;
+    width: 50%;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,.66);
+    display:inline-block;
+    padding:2%;
+    border:3px solid #fff;
+    font-size:1em;
+    text-align:left;
+}
 #thanks{
     height: auto;
     width: 50%;
