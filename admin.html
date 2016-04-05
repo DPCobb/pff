@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+
+    <title>PFF Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/a.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://www.parsecdn.com/js/parse-1.2.19.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="scripts/login.js"></script>
+    <script>
+        Parse.initialize("RGL1XyJ6nMUrtjPV5RVfD15IJsn8RDIKaxboLkxm", "O3GdL26IsKsYn4m9p6zXLw0JI4jQ67IJ6DGs4MZU");
+    </script>
+</head>
+<body>
+<div id="admin-opt">
+<script>
+    $(function(){
+        if(Parse.User.current() != null){
+            var user = Parse.User.current();
+            var name = user.get("username");
+            var TestObject = Parse.Object.extend("TestObject");
+            var query = new Parse.Query(TestObject).descending("createdAt");
+            alert("signed in");
+            $("#admin-opt").append("Hello " + name +" what would you like to do?");
+            query.find({
+                success: function(results){
+
+            // Do something with the returned Parse.Object values
+            for (var i = 0; i < results.length; i++) {
+              var object = results[i];
+              var obId = object.id;
+              console.log(object);
+              var out = "<p>" + object.get("foo") + "<a href=\"edit.html?id=" + obId + "\">Edit</a>";
+              $("#admin-opt").append(out);
+
+            }
+          },
+          error: function(error) {
+            alert("Error: " + error.code + " " + error.message);
+          }
+        });
+
+        }
+        else{
+            alert("Nope");
+            $(location).attr('href',"login.html");
+        }
+
+    });
+
+</script>
+</div>
+</body>
+</html>

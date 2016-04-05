@@ -16,32 +16,86 @@
     <meta property="og:title" content="Peekskill Film Festival"/>
     <meta property="og:url" content="http://peekskillfilmfestival.org"/>
     <meta property="og:description" content="Come check out the Peekskill Film Festival on May 13th and 14th!"/>
-    <script src="http://www.parsecdn.com/js/parse-1.6.14.min.js"></script>
+    <script src="http://www.parsecdn.com/js/parse-1.2.19.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script id="test" type="text/x-handlebars-template">
+        <div class="entry">
+            <h1>{{Title}}</h1>
+        </div>
+    </script>
+    <style>
+        .sched{
+            width:50%;
+            margin:2% auto;
+            background:#fff;
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
 <script>
     Parse.initialize("HzYVAOJtfrbYSLMFaOBWlcaXIXDLpuIbbfvqlVON", "rbl1HyAm3m4eIUtmfBOBOxlREgF7ECpLUmELv4uR");
     var TestObject = Parse.Object.extend("TestObject");
-    var testObject = new TestObject();
+    /*var testObject = new TestObject();
     testObject.set("Working", "hmmm");
     testObject.save().then(function(object) {
         alert("yay! it worked");
-    });
-    var query = new Parse.Query(TestObject);
+    });*/
+
+
+    var query = new Parse.Query(TestObject).descending("createdAt");
     query.equalTo("Working", "hmmm");
     query.find({
-  success: function(results) {
-    alert("Successfully retrieved " + results.length + " records.");
+  success: function(results){
+
     // Do something with the returned Parse.Object values
     for (var i = 0; i < results.length; i++) {
       var object = results[i];
-      alert(object.id + ' - ' + object.get('Working'));
+      console.log(object);
+      var out = "<div class=\"sched\"><p><h1>" + object.get("Working") + "</h1></p> <br><h2>" + object.get("Title") +"</h2></div>";
+      $("#container").append(out);
+
     }
   },
   error: function(error) {
     alert("Error: " + error.code + " " + error.message);
   }
 });
+Parse.User.logIn("test", "test", {
+  success: function(user) {
+    // Do stuff after successful login.
+    alert("logged in");
+    var currentUser = Parse.User.current();
+if (currentUser) {
+    // do stuff with the user
+    var user = Parse.User.current();
+    var name= user.get("username");
+
+    alert(name);
+    /*$(location).attr('href', 'http://localhost:8888/pff/test.html?id=' + name);*/
+} else {
+    // show the signup or login page
+}
+  },
+  error: function(user, error) {
+    // The login failed. Check error to see why.
+  }
+});
+function getUrlVars()
+{
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++)
+    {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+    }
+    return vars;
+}
+var first = getUrlVars()["id"];
+alert(first);
 </script>
 <div class="header">
     <a href="index.html"><img src="images/headerslice_03.png" id="one" alt="header image"></a>

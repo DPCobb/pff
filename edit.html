@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+
+    <title>PFF Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/a.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://www.parsecdn.com/js/parse-1.2.19.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="scripts/login.js"></script>
+    <script>
+        Parse.initialize("RGL1XyJ6nMUrtjPV5RVfD15IJsn8RDIKaxboLkxm", "O3GdL26IsKsYn4m9p6zXLw0JI4jQ67IJ6DGs4MZU");
+    </script>
+</head>
+<body>
+<form id="login" role="form">
+    <input type="text" id="fooedit" name="fooedit" value=""/>
+    <input type="button" id="edit" value="Submit"/>
+</form>
+<div id="fuck"></div>
+<script>
+var getUrlVars = function()
+{
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++)
+    {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+    }
+    return vars;
+};
+function editF(){
+    var getUrlVars = function()
+    {
+        var vars = [], hash;
+        var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+        for(var i = 0; i < hashes.length; i++)
+        {
+            hash = hashes[i].split('=');
+            vars.push(hash[0]);
+            vars[hash[0]] = hash[1];
+        }
+        return vars;
+    };
+    var first = getUrlVars()["id"];
+    if(Parse.User.current() != null){
+        var user = Parse.User.current();
+        var name = user.get("username");
+        var TestObject = Parse.Object.extend("TestObject");
+        var query = new Parse.Query("TestObject");
+        query.equalTo("objectId", first);
+        query.find({
+            success: function(results){
+
+        // Do something with the returned Parse.Object values
+        for (var i = 0; i < results.length; i++) {
+          var object = results[i];
+          var obId = object.id;
+          var valueO = object.get("foo");
+          $("#fooedit").val(valueO);
+          $("#fuck").append(valueO);
+
+        }
+      },
+      error: function(error) {
+        alert("Error: " + error.code + " " + error.message);
+      }
+    });
+
+    }
+    else{
+        alert("Nope");
+        $(location).attr('href',"login.html");
+    }
+};
+editF();
+$('#edit').click(function() {
+    console.log("submit function");
+    var pid = getUrlVars()["id"];
+    console.log(pid);
+    var user = $("#fooedit").val();
+    var testObject = Parse.Object.extend("TestObject");
+    var query = new Parse.Query(testObject);
+    query.equalTo("objectId", pid);
+    query.find({
+        success: function(results){
+            for (var i = 0; i < results.length; i++) {
+              var object = results[i];
+            console.log("success");
+            var testObject = Parse.Object.extend("TestObject");
+            object.set("foo", user);
+            object.save();
+            $(location).attr('href',"admin.html");
+        }
+    }})
+    });
+
+
+
+</script>
+</body>
+</html>
