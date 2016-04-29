@@ -121,6 +121,9 @@ $(document).ready(function(){
         //Slide up menu
         $('.mobile ul').slideUp();
     });
+    $('.cta').find('a').on('click', function(e){
+        e.stopPropagation();
+    });
 
     /*---------- Sponsor Info ----------*/
     var sponsorList = [
