@@ -83,7 +83,7 @@ table{
 .sponsorHL{
     width:25%;
     padding:2%;
-    height:300px;
+    height:auto;
     display:inline-block;
     border:1px solid #ececec;
     background: #dedfe0;
@@ -412,7 +412,12 @@ nav{
 .presented-by h4, .presented-by h6{
     font-weight:700;
 }
-
+#sponsorBanner{
+    width:80%;
+}
+#sponsorBanner:hover{
+    cursor:pointer;
+}
 /*----- Footer -----*/
 footer{
     font-size:.75em;
