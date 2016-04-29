@@ -399,6 +399,11 @@ nav{
 .presented-by h4, .presented-by h6{
     font-weight:700;
 }
+.flyer-sm{
+    width:80%;
+    display:inline-block;
+     margin:3%;
+ }
 
 /*----- Footer -----*/
 footer{
