@@ -1,7 +1,8 @@
 $(document).ready(function(){
     $('.film-img').click(function(){
         var showId = $(this).attr('data-display');
-        var id = '#'+showId
+        var id = '#'+showId;
+        $('.film-info').hide();
         $(id).slideToggle(function(){
             if ($(this).not(':hidden')){
                 $('html, body').animate({
