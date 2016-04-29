@@ -11,6 +11,14 @@
     <link rel="stylesheet" href="css/main.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <meta name="description" content="Peekskill Film Festival information" />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" value="Check out the Peekskill Film Festival">
+    <meta property="og:image" content="http://peekskillfilmfestival.org/images/pff.png"/>
+    <meta property="og:title" content="Peekskill Film Festival"/>
+    <meta property="og:url" content="http://peekskillfilmfestival.org"/>
+    <meta property="og:description" content="Come check out the Peekskill Film Festival!"/>
 </head>
 <body>
     <!-- HEADER starts -->
@@ -136,6 +144,7 @@
                 <div class="location-wrap">
                     <div class="paramount-info" id="paramount">
                         <h4>The Paramount Theater</h4>
+                        <h5>1008 Brown St, Peekskill NY 10566</h5>
                         <h2>Events</h2>
                         <table>
                             <thead>
@@ -177,6 +186,7 @@
                             <div id="map"></div>
                         </div>
                         <br><button class="button" id="paramount-dir">Directions</button>
+                        <a href="http://paramounthudsonvalley.com/" title="paramount theater link" class="button" target="_blank">Paramount Theater Website</a>
                         <br><a href="#home" class="back-link">Home</a>
                         <div class="row">
                             <div class="twelve columns">
@@ -210,6 +220,7 @@
                     </div>
                     <div class="field-info" id="field">
                         <h4>Peekskill Coffee House</h4>
+                        <h5>101 S. Division St, Peekskill NY 10566</h5>
                         <h2>Events</h2>
                         <table>
                             <thead>
@@ -232,11 +243,13 @@
                         <div class="map-view">
                             <div id="mapTwo"></div>
                         </div>
+                        <br><a href="http://www.peekskillcoffee.com/" title="peekskill coffee house link" class="button" target="_blank">Peekskill Coffee House Website</a>
                         <br><a href="#home" class="back-link">Home</a>
 
                     </div>
                     <div class="hvcca-info" id="hvcca">
                         <h4>The Hudson Valley Center For Contemporary Art</h4>
+                        <h5>1701 Main St, Peekskill NY 10566</h5>
                         <h2>Events</h2>
                         <table>
                             <thead>
@@ -260,6 +273,7 @@
                             <div id="mapThree"></div>
                         </div>
                         <br><button class="button" id="hvcca-dir">Directions</button>
+                        <a href="http://www.hvcca.org/" title="HVCCA link" class="button" target="_blank">HVCCA Website</a>
                         <br><a href="#home" class="back-link">Home</a>
                         <div class="row">
                             <div class="twelve columns">
@@ -321,7 +335,23 @@
     <div class="row">
         <div class="twelve columns">
             <div class="presented-by">
-                
+                <h4>The Peekskill Film Festival is brought to you by</h4>
+                <img src="images/paramount.png" alt="Paramount Theater Logo" class="logo-img"/>
+                <img src="images/field 2.jpg" alt="Field Library Logo" class="logo-img"/>
+                <h6>With generous support from our sponsors</h6>
+                <img src="images/dcfb.png" alt="DCWebDev Logo" class="logo-img dc"/>
+                <img src="images/ImpoliteCO.jpg" alt="ImpoliteCo Logo" class="logo-img"/>
+                <img src="images/logo-entergy-reg.gif" alt="Entergy Logo" class="logo-img"/>
+                <img src="images/pointoforder.jpg" alt="Point Of Order Logo" class="logo-img"/>
+                <img src="images/wcc.jpg" alt="WCC Logo" class="logo-img"/>
+                <img src="images/HVCCA.png" alt="HVCCA Logo" class="logo-img"/>
+                <img src="images/pcoffee.jpg" alt="Peekskill Coffee House Logo" class="logo-img"/>
+                <img src="images/Arthurweeks.jpg" alt="Arthur Weeks Logo" class="logo-img"/>
+                <img src="images/apost.jpg" alt="Alchemy Post Logo" class="logo-img"/>
+                <footer>
+                    &copy; 2016 Peekskill Film Festival | Website built by <a href="http://www.daniel-cobb.com" target="_blank">DCWebDev</a>
+                </footer>
+
             </div>
         </div>
     </div>
@@ -370,19 +400,19 @@ var marker = new google.maps.Marker({
         title: 'Peekskill Film Festival: Hudson Valley Center for Contemporary Arts'
       });
   var infowindow = new google.maps.InfoWindow({
-    content: "<span style=\"font-weight:700;\">May 13-14 Peekskill Film Festival Location</span><hr> <p> The Paramount Theater <br>1008 Brown St. <br> Peekskill, NY <br> 10566"
+    content: "<span style=\"font-weight:700;\">May 13-15 Peekskill Film Festival Location</span><hr> <p> The Paramount Theater <br>1008 Brown St. <br> Peekskill, NY <br> 10566"
   });
   marker.addListener('click', function() {
    infowindow.open(map, marker);
  });
  var infowindowTwo = new google.maps.InfoWindow({
-   content: "<span style=\"font-weight:700;\">May 13-14 Peekskill Film Festival Location</span><hr> <p> The Peeksill Coffee House <br>101 S Division St. <br> Peekskill, NY <br> 10566"
+   content: "<span style=\"font-weight:700;\">May 13-15 Peekskill Film Festival Location</span><hr> <p> The Peeksill Coffee House <br>101 S Division St. <br> Peekskill, NY <br> 10566"
  });
  markerTwo.addListener('click', function() {
   infowindowTwo.open(mapViewTwo, markerTwo);
 });
 var infowindowThree = new google.maps.InfoWindow({
-  content: "<span style=\"font-weight:700;\">May 13-14 Peekskill Film Festival Location</span><hr> <p> Hudson Valley Center for Contemporary Arts <br>1701 Main St. <br> Peekskill, NY <br> 10566"
+  content: "<span style=\"font-weight:700;\">May 13-15 Peekskill Film Festival Location</span><hr> <p> Hudson Valley Center for Contemporary Arts <br>1701 Main St. <br> Peekskill, NY <br> 10566"
 });
 markerThree.addListener('click', function() {
  infowindowThree.open(mapViewThree, markerThree);
@@ -390,22 +420,23 @@ markerThree.addListener('click', function() {
 }
     </script>
 
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8Yh4jvFBRW44M6WN3QXFBrUJPehn2RCk&callback=initMap"type="text/javascript"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8Yh4jvFBRW44M6WN3QXFBrUJPehn2RCk&callback=initMap"
+  type="text/javascript"></script>
 
   <!-- Direction Toggle Script -->
     <script type="text/javascript">
         $(document).ready(function(){
             $('#paramount-dir').click(function(){
-                $('#pdirections').slideToggle();
+                $('#pdirections').slideToggle()
             });
             $('#field-dir').click(function(){
-                $('#fdirections').slideToggle();
+                $('#fdirections').slideToggle()
             });
             $('#hvcca-dir').click(function(){
-                $('#hdirections').slideToggle();
+                $('#hdirections').slideToggle()
             });
-        });
+        })
     </script>
-<script src="scripts/scripts.js"></script>
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>
