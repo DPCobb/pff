@@ -9,8 +9,8 @@ $(document).ready(function(){
                     }, 1000);
             }
             else{
-                $('.film-info').hide()
-                $(id).show()
+                $('.film-info').hide();
+                $(id).show();
             }
         })
     });
@@ -111,6 +111,8 @@ $(document).ready(function(){
         $('.mobile ul').slideUp();
     });
     $('.cta').find('a').on('click', function(e){
+        // Stops "discover how you can be a part" click from traveling up DOM to cta event and blocking
+        // page direct to join.html
         e.stopPropagation();
     });
 
