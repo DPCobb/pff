@@ -117,6 +117,7 @@ $(document).ready(function(){
     //Close small Nav if click outside of menu
     $('.cta').on('click',function(e){
         e.preventDefault();
+        e.stopPropagation();
         //Slide up menu
         $('.mobile ul').slideUp();
     });
