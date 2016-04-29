@@ -1,27 +1,16 @@
 $(document).ready(function(){
-    $('#butnotforme-img').click(function(){
-        $('#butnotforme').slideToggle(function(){
-            if ($('#goldendream').is(':hidden')){
+    $('.film-img').click(function(){
+        var showId = $(this).attr('data-display');
+        var id = '#'+showId
+        $(id).slideToggle(function(){
+            if ($(this).not(':hidden')){
                 $('html, body').animate({
-                        scrollTop: $('#butnotforme').offset().top-200
+                        scrollTop: $(id).offset().top-200
                     }, 1000);
             }
             else{
-                $('#goldendream').hide()
-                $('#butnotforme').show()
-            }
-        })
-    });
-    $('#goldendream-img').click(function(){
-        $('#goldendream').slideToggle(function(){
-            if ($('#butnotforme').is(':hidden')){
-                $('html, body').animate({
-                        scrollTop: $('#goldendream').offset().top-200
-                    }, 1000);
-            }
-            else{
-                $('#butnotforme').hide()
-                $('#goldendream').show()
+                $('.film-info').hide();
+                $(id).show();
             }
         })
     });
@@ -122,6 +111,8 @@ $(document).ready(function(){
         $('.mobile ul').slideUp();
     });
     $('.cta').find('a').on('click', function(e){
+        // Stops "discover how you can be a part" click from traveling up DOM to cta event and blocking
+        // page direct to join.html
         e.stopPropagation();
     });
 
