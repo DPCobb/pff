@@ -2,9 +2,9 @@ $(document).ready(function(){
     $('.film-img').click(function(){
         var showId = $(this).attr('data-display');
         var id = '#'+showId;
-        $('.film-info').hide();
         $(id).slideToggle(function(){
             if ($(this).not(':hidden')){
+                $('.film-info').not(this).hide();
                 $('html, body').animate({
                         scrollTop: $(id).offset().top-200
                     }, 1000);
