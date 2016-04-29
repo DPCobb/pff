@@ -1,72 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-
-    <title>Peekskill Film Festival</title>
-    <link rel="shortcut icon" href="favicon.ico"/>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Limelight' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+    <title>Peekskill Film Festival: Contact</title>
+    <link rel="stylesheet" href="css/magnific.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href="css/altcss.css" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <meta property="og:image" content="http://peekskillfilmfestival.org/images/pff.png"/>
-    <meta property="og:title" content="Peekskill Film Festival"/>
-    <meta property="og:url" content="http://peekskillfilmfestival.org"/>
-    <meta property="og:description" content="Come check out the Peekskill Film Festival on May 13th and 14th!"/>
 </head>
 <body>
-<div class="header">
-    <a href="index.html"><img src="images/headerslice_03.png" id="one" alt="Header Image"></a>
-    <section id="title"> <h1>Peekskill Film Festival</h1>
-        <h5>May 13-14 @ The Paramount Theater</h5>
-        <nav> </nav>
-        <script>
-            $(function(){
-                $("nav").load("nav.html");
-            });
-        </script>
-    </section>
-    <section id="social">
-        <a href="https://www.facebook.com/peekskillfilmfest" target="_blank"><i class="fa fa-facebook"></i></a>
-        <a href="https://twitter.com/PKfilmfest" target="_blank"><i class="fa fa-twitter"></i></a>
-        <a href="https://instagram.com/peekskillfilmfest/" target="_blank"><i class="fa fa-instagram"></i></a>
-    </section>
-    <!-- <section id="socialalt">
-            <a href="https://www.facebook.com/peekskillfilmfest" target="_blank"><i class="fa fa-facebook"></i></a>
-            <a href="https://twitter.com/PKfilmfest" target="_blank"><i class="fa fa-twitter"></i></a>
-            <a href="https://instagram.com/peekskillfilmfest/" target="_blank"><i class="fa fa-instagram"></i></a>
-        </section>-->
-
-</div>
-<div id="container">
-    <section id="contact-info">
-        <h1>Contact Info:</h1>
-        <h2>You can reach the events organizers for more information through the following resources:</h2>
-        <p>
-            <a href="mailto:peekskillfilmfestival@gmail.com">Email: peekskillfilmfestival@gmail.com</a>
-        </p>
-        <h2>Social Media Sites:</h2>
-        <div id="social-lg">
-        <a href="https://www.facebook.com/peekskillfilmfest" target="_blank"><i class="fa fa-facebook"></i></a>
-        <a href="https://twitter.com/PKfilmfest" target="_blank"><i class="fa fa-twitter"></i></a>
-        <a href="https://instagram.com/peekskillfilmfest/" target="_blank"><i class="fa fa-instagram"></i></a>
+    <!-- HEADER starts -->
+    <header>
+        <div class="row">
+            <div class="twelve columns">
+                <img src="images/pff.png" alt="Peekskill Film Festival Logo" class="logo">
+                <h1>Peekskill Film Festival</h1><br>
+                <h5>May 13-15</h5>
+                <a href="https://www.facebook.com/peekskillfilmfest" target="_blank" class="social"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/PKfilmfest" target="_blank" class="social"><i class="fa fa-twitter"></i></a>
+                <a href="https://instagram.com/peekskillfilmfest/" target="_blank" class="social"><i class="fa fa-instagram"></i></a>
+            </div>
         </div>
-    </section>
-    <section id="dl-sched">
-        <form action="http://formspree.io/peekskillfilmfestival@gmail.com" method="POST">
-            <input type="text" required="required" id="name" name="name" placeholder="Hi, what's your name?"/>
-            <input type="email" required="required" id="email" name="_replyto" placeholder="What's your email?"/>
-            <textarea id="info" placeholder="What can we help you with?" name="body" rows="5"></textarea>
-            <input type="text" name="_gotcha" style="display:none" />
-            <input type="hidden" name="_subject" value="New Contact!" />
-            <input type="hidden" name="_next" value="thanks.html" />
-            <input type="submit" value="Send" id="send"/>
+    </header>
+    <!-- HEADER ends -->
+    <!-- NAV starts -->
+    <nav>
+        <!-- Main Nav -->
+        <div class="row">
+            <div class="twelve columns">
+                <ul class="navbar large">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Festival</a>
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="sched.html">Schedule</a></li>
+                            <li><a href="films.html">Films</a></li>
+                            <li><a href="workshopreg.html">Workshop Registration</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Info</a>
+                        <ul>
+                            <li><a href="location.html">Location</a></li>
+                            <li><a href="sponsor.html">Sponsors</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact</a>
+                        <ul>
+                            <li><a href="donate.html">Donate</a></li>
+                            <li><a href="newsponsor.html">Become a Sponsor</a></li>
+                            <li><a href="contact.html">General</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Share</a>
+                        <ul class="sub">
+                            <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.peekskillfilmfestival.org" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+                            <li><a href="https://twitter.com/home?status=Check%20out%20the%20Peekskill%20Film%20Festival!%20http%3A//www.peekskillfilmfestival.org" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+                            <li><a href="https://plus.google.com/share?url=http%3A//www.peekskillfilmfestival.org" target="_blank"><i class="fa fa-google-plus"></i> Google+</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-        </form>
-    </section>
-</div>
+        <!-- Nav for screens under 750px -->
+        <div class="row">
+            <div class="twelve columns">
+                <ul class="navbar mobile" id="smallNav">
+                    <li><span class="threeline">&#9776;</span>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">Festival &#x2304;</a>
+                                <ul>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="sched.html">Schedule</a></li>
+                                    <li><a href="films.html">Films</a></li>
+                                    <li><a href="workshopreg.html">Workshop Registration</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Info &#x2304;</a>
+                                <ul>
+                                    <li><a href="location.html">Location</a></li>
+                                    <li><a href="sponsor.html">Sponsors</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Contact &#x2304;</a>
+                                <ul>
+                                    <li><a href="donate.html">Donate</a></li>
+                                    <li><a href="newsponsor.html">Become a Sponsor</a></li>
+                                    <li><a href="contact.html">General</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Share</a>
+                                <ul class="sub">
+                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.peekskillfilmfestival.org" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+                                    <li><a href="https://twitter.com/home?status=Check%20out%20the%20Peekskill%20Film%20Festival!%20http%3A//www.peekskillfilmfestival.org" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+                                    <li><a href="https://plus.google.com/share?url=http%3A//www.peekskillfilmfestival.org" target="_blank"><i class="fa fa-google-plus"></i> Google+</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <!-- NAV ends -->
+    <!-- MAIN Body Container start -->
+    <div class="container">
+        <div class="row">
+            <div class="twelve columns">
+                <div class="content textCenter">
+                    <h5>You can reach the events organizers for more information through the following resources:</h5>
+                    <p>
+                        <a href="mailto:peekskillfilmfestival@gmail.com">Email: peekskillfilmfestival@gmail.com</a>
+                    </p>
+                    <h2>Social Media Sites:</h2>
+                    <div class="social-lg">
+                        <a href="https://www.facebook.com/peekskillfilmfest" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/PKfilmfest" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="https://instagram.com/peekskillfilmfest/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Sponsor/Footer Area start-->
+    <div class="row">
+        <div class="twelve columns">
+            <div class="presented-by">
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Gallery Script -->
+    <script src="js/magnific.js"></script>
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>

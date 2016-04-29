@@ -1,69 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-
-    <title>Peekskill Film Festival</title>
-    <link rel="shortcut icon" href="favicon.ico"/>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Limelight' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+    <title>Peekskill Film Festival: About</title>
+    <link rel="stylesheet" href="css/magnific.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href="css/altcss.css" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <meta property="og:image" content="http://peekskillfilmfestival.org/images/pff.png"/>
-    <meta property="og:title" content="Peekskill Film Festival"/>
-    <meta property="og:url" content="http://peekskillfilmfestival.org"/>
-    <meta property="og:description" content="Come check out the Peekskill Film Festival on May 13th and 14th!"/>
 </head>
 <body>
-<div class="header">
-    <a href="index.html"><img src="images/headerslice_03.png" id="one" alt="Header Image"></a>
-    <section id="title"> <h1>Peekskill Film Festival</h1>
-        <h5>May 13-14 @ The Paramount Theater</h5>
-        <nav> </nav>
-        <script>
-            $(function(){
-                $("nav").load("nav.html");
-            });
-        </script>
-    </section>
-    <section id="social">
-        <a href="https://www.facebook.com/peekskillfilmfest" target="_blank"><i class="fa fa-facebook"></i></a>
-        <a href="https://twitter.com/PKfilmfest" target="_blank"><i class="fa fa-twitter"></i></a>
-        <a href="https://instagram.com/peekskillfilmfest/" target="_blank"><i class="fa fa-instagram"></i></a>
-    </section>
-    <!-- <section id="socialalt">
-            <a href="https://www.facebook.com/peekskillfilmfest" target="_blank"><i class="fa fa-facebook"></i></a>
-            <a href="https://twitter.com/PKfilmfest" target="_blank"><i class="fa fa-twitter"></i></a>
-            <a href="https://instagram.com/peekskillfilmfest/" target="_blank"><i class="fa fa-instagram"></i></a>
-        </section>-->
+    <!-- HEADER starts -->
+    <header>
+        <div class="row">
+            <div class="twelve columns">
+                <img src="images/pff.png" alt="Peekskill Film Festival Logo" class="logo">
+                <h1>Peekskill Film Festival</h1><br>
+                <h5>May 13-15</h5>
+                <a href="https://www.facebook.com/peekskillfilmfest" target="_blank" class="social"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/PKfilmfest" target="_blank" class="social"><i class="fa fa-twitter"></i></a>
+                <a href="https://instagram.com/peekskillfilmfest/" target="_blank" class="social"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER ends -->
+    <!-- NAV starts -->
+    <nav>
+        <!-- Main Nav -->
+        <div class="row">
+            <div class="twelve columns">
+                <ul class="navbar large">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Festival</a>
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="sched.html">Schedule</a></li>
+                            <li><a href="films.html">Films</a></li>
+                            <li><a href="workshopreg.html">Workshop Registration</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Info</a>
+                        <ul>
+                            <li><a href="location.html">Location</a></li>
+                            <li><a href="sponsor.html">Sponsors</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact</a>
+                        <ul>
+                            <li><a href="donate.html">Donate</a></li>
+                            <li><a href="newsponsor.html">Become a Sponsor</a></li>
+                            <li><a href="contact.html">General</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Share</a>
+                        <ul class="sub">
+                            <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.peekskillfilmfestival.org" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+                            <li><a href="https://twitter.com/home?status=Check%20out%20the%20Peekskill%20Film%20Festival!%20http%3A//www.peekskillfilmfestival.org" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+                            <li><a href="https://plus.google.com/share?url=http%3A//www.peekskillfilmfestival.org" target="_blank"><i class="fa fa-google-plus"></i> Google+</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-</div>
-<div id="container">
-    <section id="sched">
-        <h2>About the Festival</h2>
-        <p>The Peekskill Film Festival (PFF) was founded  to promote film literacy in the vibrant and historic Hudson River city of Peekskill, NY,  and is an important opportunity to view new works by emerging  filmmakers, including features, shorts, documentaries, animation and student work.  In 2016, the PFF will also concentrate on Black and Hispanic filmmakers and themes, featuring films sorely overlooked in more conventional festivals. Through informative workshops, and networking opportunities, The PFF will facilitate educational and career-oriented programming for students of film and filmmakers.  The festival hopes to introduce, involve and immerse youth from underserved communities of color to a world where they, too, can contribute and create.
+        <!-- Nav for screens under 750px -->
+        <div class="row">
+            <div class="twelve columns">
+                <ul class="navbar mobile" id="smallNav">
+                    <li><span class="threeline">&#9776;</span>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">Festival &#x2304;</a>
+                                <ul>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="sched.html">Schedule</a></li>
+                                    <li><a href="films.html">Films</a></li>
+                                    <li><a href="workshopreg.html">Workshop Registration</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Info &#x2304;</a>
+                                <ul>
+                                    <li><a href="location.html">Location</a></li>
+                                    <li><a href="sponsor.html">Sponsors</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Contact &#x2304;</a>
+                                <ul>
+                                    <li><a href="donate.html">Donate</a></li>
+                                    <li><a href="newsponsor.html">Become a Sponsor</a></li>
+                                    <li><a href="contact.html">General</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Share</a>
+                                <ul class="sub">
+                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.peekskillfilmfestival.org" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+                                    <li><a href="https://twitter.com/home?status=Check%20out%20the%20Peekskill%20Film%20Festival!%20http%3A//www.peekskillfilmfestival.org" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+                                    <li><a href="https://plus.google.com/share?url=http%3A//www.peekskillfilmfestival.org" target="_blank"><i class="fa fa-google-plus"></i> Google+</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-<p>We want the people of Peekskill to come out and see homegrown talent, and our youth to learn valuable tools in the art of filmmaking. We want people to see film that they wouldn’t necessarily have access to while learning about the heritage and the journey of their immigrant neighbors. We want people to learn about our community, about our beautiful city:  our library, our art, our bodegas, our restaurants, our theaters, our clubs, our woods, our schools, our riverfront, our people.   We want everyone in Westchester to learn about Peekskill, and see all that we have going on!
+    </nav>
+    <!-- NAV ends -->
+    <!-- MAIN Body Container start -->
+    <div class="container">
+        <div class="row">
+            <div class="twelve columns">
+                <section class="content">
+                    <h2>About the Festival:</h2>
+                    <p>The Peekskill Film Festival (PFF) was founded to promote film literacy in the vibrant and historic Hudson River city of Peekskill, NY, and is an important opportunity to view new works by emerging filmmakers, including features, shorts, documentaries, animation and student work. In 2016, the PFF will also concentrate on Black and Hispanic filmmakers and themes, featuring films sorely overlooked in more conventional festivals. Through informative workshops, and networking opportunities, The PFF will facilitate educational and career-oriented programming for students of film and filmmakers. The festival hopes to introduce, involve and immerse youth from underserved communities of color to a world where they, too, can contribute and create.
+                    We want the people of Peekskill to come out and see homegrown talent, and our youth to learn valuable tools in the art of filmmaking. We want people to see film that they wouldn’t necessarily have access to while learning about the heritage and the journey of their immigrant neighbors. We want people to learn about our community, about our beautiful city: our library, our art, our bodegas, our restaurants, our theaters, our clubs, our woods, our schools, our riverfront, our people. We want everyone in Westchester to learn about Peekskill, and see all that we have going on!</p>
 
-<p><h4>Our Purpose:</h4>
-<br>Give up and coming filmmakers, writers, actors and producers a chance for their work to be shown in a festival setting,
-Provide  exposure to award winning films and performers who reflect the diversity of the city of Peekskill ;
-Promote film literacy through workshops and lectures,  providing participants  a chance to see important, overlooked, and often excluded works of film,
-Start dialogues. Create. Network!
+                    <h3>Our Purpose:</h3>
 
-<p><h4>Festival Specifics:</h4>
-<br>Tickets: $10.  Proceeds to benefit the cultural programming of The Field Library, the major source of information for the City of Peekskill. Workshops are free of charge.
-    </section>
-    <section id="dl-sched">
-        <h3>Sponsered By:</h3>
-        <a href="http://www.peekskill.org/" target="_blank"><img src="images/field.jpg" alt="Field Library Logo" title="Field Library" class="sponsor-logo"></a>
-        <a href="http://paramounthudsonvalley.com/" target="_blank"><img src="images/paramount.png" alt="Paramount Theater Logo" title="Paramount Theater" class="sponsor-logo" id="pmount"></a>
-        <a href="http://www.daniel-cobb.com" target="_blank"><img src="images/dcfb.png" alt="Daniel Cobb WebDev Logo" title="Daniel Cobb WebDev" class="sponsor-logo" id="dclogo"></a>
-        <a href="http://www.sunywcc.edu/" target="_blank"><img src="images/wcc.jpg" alt="Westchester Community College Logo" title="Westchester Community College" class="sponsor-logo" id="wcc"></a>
-    </section>
-</div>
+                    <p>Give up and coming filmmakers, writers, actors and producers a chance for their work to be shown in a festival setting, Provide exposure to award winning films and performers who reflect the diversity of the city of Peekskill ; Promote film literacy through workshops and lectures, providing participants a chance to see important, overlooked, and often excluded works of film, Start dialogues. Create. Network!</p>
+
+                    <h3>Festival Specifics:</h3>
+
+                    <p>Tickets: $10. Proceeds to benefit the cultural programming of The Field Library, the major source of information for the City of Peekskill. Workshops are free of charge.</p>
+                    <div class="tickets"><A HREF="http://www.brownpapertickets.com/event/2498782" class="ticketbtn"><IMG SRC="http://www.brownpapertickets.com/g/6/BPT_buy_tickets_large.png" BORDER=0></A></div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- Sponsor/Footer Area start-->
+    <div class="row">
+        <div class="twelve columns">
+            <div class="presented-by">
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Gallery Script -->
+    <script src="js/magnific.js"></script>
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>

@@ -1,111 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-
-    <title>Peekskill Film Festival</title>
-    <link rel="shortcut icon" href="favicon.ico"/>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Limelight' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+    <title>Peekskill Film Festival: Schedule</title>
+    <link rel="stylesheet" href="css/magnific.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href="css/altcss.css" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <meta property="og:image" content="http://peekskillfilmfestival.org/images/pff.png"/>
-    <meta property="og:title" content="Peekskill Film Festival"/>
-    <meta property="og:url" content="http://peekskillfilmfestival.org"/>
-    <meta property="og:description" content="Come check out the Peekskill Film Festival on May 13th and 14th!"/>
 </head>
 <body>
-<div class="header">
-    <a href="index.html"><img src="images/headerslice_03.png" id="one" alt="header image"></a>
-    <section id="title"> <h1>Peekskill Film Festival</h1>
-        <h5>May 13-14 @ The Paramount Theater</h5>
-        <nav> </nav>
-        <script>
-            $(function(){
-                $("nav").load("nav.html");
-            });
-        </script>
-    </section>
-    <section id="social">
-        <a href="https://www.facebook.com/peekskillfilmfest" target="_blank"><i class="fa fa-facebook"></i></a>
-        <a href="https://twitter.com/PKfilmfest" target="_blank"><i class="fa fa-twitter"></i></a>
-        <a href="https://instagram.com/peekskillfilmfest/" target="_blank"><i class="fa fa-instagram"></i></a>
-    </section>
-    <!-- <section id="socialalt">
-            <a href="https://www.facebook.com/peekskillfilmfest" target="_blank"><i class="fa fa-facebook"></i></a>
-            <a href="https://twitter.com/PKfilmfest" target="_blank"><i class="fa fa-twitter"></i></a>
-            <a href="https://instagram.com/peekskillfilmfest/" target="_blank"><i class="fa fa-instagram"></i></a>
-        </section>-->
+    <!-- HEADER starts -->
+    <header>
+        <div class="row">
+            <div class="twelve columns">
+                <img src="images/pff.png" alt="Peekskill Film Festival Logo" class="logo">
+                <h1>Peekskill Film Festival</h1><br>
+                <h5>May 13-15</h5>
+                <a href="https://www.facebook.com/peekskillfilmfest" target="_blank" class="social"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/PKfilmfest" target="_blank" class="social"><i class="fa fa-twitter"></i></a>
+                <a href="https://instagram.com/peekskillfilmfest/" target="_blank" class="social"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER ends -->
+    <!-- NAV starts -->
+    <nav>
+        <!-- Main Nav -->
+        <div class="row">
+            <div class="twelve columns">
+                <ul class="navbar large">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Festival</a>
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="sched.html">Schedule</a></li>
+                            <li><a href="films.html">Films</a></li>
+                            <li><a href="workshopreg.html">Workshop Registration</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Info</a>
+                        <ul>
+                            <li><a href="location.html">Location</a></li>
+                            <li><a href="sponsor.html">Sponsors</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact</a>
+                        <ul>
+                            <li><a href="donate.html">Donate</a></li>
+                            <li><a href="newsponsor.html">Become a Sponsor</a></li>
+                            <li><a href="contact.html">General</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Share</a>
+                        <ul class="sub">
+                            <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.peekskillfilmfestival.org" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+                            <li><a href="https://twitter.com/home?status=Check%20out%20the%20Peekskill%20Film%20Festival!%20http%3A//www.peekskillfilmfestival.org" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+                            <li><a href="https://plus.google.com/share?url=http%3A//www.peekskillfilmfestival.org" target="_blank"><i class="fa fa-google-plus"></i> Google+</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-</div>
-<div id="container">
-   <section id="sched">
-       <h1>Show Dates and Times</h1>
-       <h2>Friday May 13th</h2>
+        <!-- Nav for screens under 750px -->
+        <div class="row">
+            <div class="twelve columns">
+                <ul class="navbar mobile" id="smallNav">
+                    <li><span class="threeline">&#9776;</span>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">Festival &#x2304;</a>
+                                <ul>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="sched.html">Schedule</a></li>
+                                    <li><a href="films.html">Films</a></li>
+                                    <li><a href="workshopreg.html">Workshop Registration</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Info &#x2304;</a>
+                                <ul>
+                                    <li><a href="location.html">Location</a></li>
+                                    <li><a href="sponsor.html">Sponsors</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Contact &#x2304;</a>
+                                <ul>
+                                    <li><a href="donate.html">Donate</a></li>
+                                    <li><a href="newsponsor.html">Become a Sponsor</a></li>
+                                    <li><a href="contact.html">General</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Share</a>
+                                <ul class="sub">
+                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.peekskillfilmfestival.org" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+                                    <li><a href="https://twitter.com/home?status=Check%20out%20the%20Peekskill%20Film%20Festival!%20http%3A//www.peekskillfilmfestival.org" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+                                    <li><a href="https://plus.google.com/share?url=http%3A//www.peekskillfilmfestival.org" target="_blank"><i class="fa fa-google-plus"></i> Google+</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-       <p>6:00pm – Red Carpet reception</p>
+    </nav>
+    <!-- NAV ends -->
+    <!-- MAIN Body Container start -->
+    <div class="container">
+        <div class="row">
+            <div class="twelve columns">
+                <section class="content schedHead">
+                    <h2>Friday May 13</h2>
+                    <h4>The Paramount Hudson Valley Theater, 1008 Brown Street</h4>
+                    <a href="#" class="button more" data-info="friday">More Info</a>
+                    <div class="hidden" id="friday">
+                        <h5>Time: 8:00 pm</h5>
+                        <h5>Special Selection</h5>
 
-       <p>7:00pm – Film Screening – “But not for me”</p>
-       <blockquote><a href="https://www.facebook.com/ButNotForMeFilm/?fref=ts"><img src="https://scontent-iad3-1.xx.fbcdn.net/hphotos-xfa1/t31.0-8/10872929_707732239340762_3415794374361501619_o.jpg" alt="But Not For Me movie poster"></a>“But Not For Me" is a Brooklyn Film Festival winner,
+                        <h5>“But Not For Me,” (2015). Director: Ryan Carmichael.</h5>
+                        <p>A struggling, disillusioned young writer discovers a fledgling sense of hope when a beautiful
+                        violinist moves in next door and agrees to perform with him on the city streets. After the movie,
+                        the star of the film, Peekskill area resident Marcus Carl Franklin will perform the movie’s
+                        unofficial theme song, “20something” followed by a Q and A with director Ryan Carmichael and
+                        producer Ryan Stefaniak.</p>
+                        <br><a href="#" class="back-link close">Close</a>
+                    </div>
+                    <h2>Saturday May 14</h2>
+                    <h4>The Paramount Hudson Valley Theater, 1008 Brown Street</h4>
+                    <a href="#" class="button more" data-info="saturday">More Info</a>
+                    <div class="hidden" id="saturday">
+                        <h5>Time: 12:00 pm - 1:30 pm</h5>
+                        <h5>Workshop with Impolite Company</h5>
 
-           (Audience Award and Best Original Score.) The young star of the film, Peekskill resident Marcus
+                        <p>Join Ryan Carmichael and Jason Stefaniak, producers, directors, and founders of the
+                        production team Impolite Company, for an informative workshop. Multiple award winners (including
+                        an Emmy,) Carmichael and Stefaniak will screen film clips by underrepresented and overlooked
+                        minority filmmakers and talk about expression through filmmaking. A hallmark of Impolite Company
+                        is their desire to mentor young people and inspire media literacy.</p>
 
-           Carl Franklin, is an award winning actor,record producer, and entertainer,  best known for his
+                        <h5>Time: 2:00 pm - 6:00 pm</h5>
 
-           roles in the  HBO classic “Lackawanna Blues” and the  IFC Spirit Award Nominated  “ I'm Not
+                        <p>“Americanos: Latino Life in the United States” (2000) Directors: Susan Todd and Andrew Young. New HD version of this multiple- award winning documentary.</p>
+                        <p>“A Way Out” (2015). Director: Jason Tostevin</p>
+                        <p>“Mother of the Week” (2015). Director: Lee Davis</p>
+                        <p>“Break Away” (2015). Director: Dalton Thorvilson</p>
+                        <p>“Since: The Bombing of Pan Am Flight 103” (2015). Director: Phil Furey</p>
 
-           There.”  Franklin will then perform “20Something,”  the theme song of “But Not For Me." <br>
-           <a href="http://www.imdb.com/title/tt4292478/">More Info</a>
-       </blockquote>
+                        <h5>Time: 8:00 pm</h5>
+                        <h5>Special Selection</h5>
 
-       <p>9:30pm – Live Q&amp;A w/ Directors</p>
+                        <h5>“La Jaula De Oro” (2013). Directed by Diego Quemada-Diez</h5>
+                        <p>The most awarded Mexican film in history -- with over 80 international accolades including
+                        9 Ariel awards and an Un Certain Talent prize from the Cannes Film Festival -- Diego Quemada-
+                        Diez's acclaimed debut feature tells the story of three teenagers from the slums of Guatemala
+                        who travel to the USA in search of a better life. On their journey through Mexico they meet
+                        Chauk, a Tzotzil teen from Chiapas who doesn’t speak Spanish. Travelling together in cargo
+                        trains, walking on the railroad tracks, they will soon have to face a harsh reality. “La Jaula
+                        De Oro” strikes a particularly resonant note for many residents of Peekskill, who are Guatemalan,
+                         Ecuadorian, and Mexican immigrants.</p>
+                         <br><a href="#" class="back-link close">Close</a>
+                    </div>
+                    <h2>Sunday May 15</h2>
+                    <h4>The Hudson Valley Center for Contemporary Art (HVCCA), 1701 Main St.</h4>
+                    <h4>The Peekskill Coffee House, 101 S Division St.</h4>
+                    <a href="#" class="button more" data-info="sunday">More Info</a>
+                    <div class="hidden" id="sunday">
+                        <h5>Time: 12:00 pm - 4:00 pm</h5>
+                        <h5>Location: The Hudson Valley Center for Contemporary Art (HVCCA)</h5>
+                        <p>“Last Train to Babylon” (2016). Director: Luis Ayala</p>
+                        <p>“The Usual” (2014). Directors: Robert Cafarelli and Troy Peterson</p>
+                        <p>“Evergreen” (2015). Director: Beatrice Copeland</p>
 
-       <p>10pm – Original Film Score Performance</p>
+                        <h5>Time: 5:00 pm - 6:00 pm</h5>
+                        <h5>Location: The Peekskill Coffee House 101 S Division St.</h5>
+                        <p>“The Great American Jukebox” (2011). Director: Andrew Stein</p>
+                        <br><a href="#" class="back-link close">Close</a>
+                    </div>
+                    <div class="full">
+                        <h2>Want to view the full schedule all at once?</h2>
+                        <p><a href="#" class="button more" data-info='full'>View Full Schedule</a></p>
+                        <div class="hidden" id="full">
+                            <h2>Friday May 13</h2>
+                            <h4>The Paramount Hudson Valley Theater, 1008 Brown Street</h4>
+                            <h5>Time: 8:00 pm</h5>
+                            <h5>Special Selection</h5>
 
-       <h2>Saturday May 14th</h2>
+                            <h5>“But Not For Me,” (2015). Director: Ryan Carmichael.</h5>
+                            <p>A struggling, disillusioned young writer discovers a fledgling sense of hope when a beautiful
+                            violinist moves in next door and agrees to perform with him on the city streets. After the movie,
+                            the star of the film, Peekskill area resident Marcus Carl Franklin will perform the movie’s
+                            unofficial theme song, “20something” followed by a Q and A with director Ryan Carmichael and
+                            producer Ryan Stefaniak.</p>
+                            <h2>Saturday May 14</h2>
+                            <h4>The Paramount Hudson Valley Theater, 1008 Brown Street</h4>
+                            <h5>Time: 12:00 pm - 1:30 pm</h5>
+                            <h5>Workshop with Impolite Company</h5>
 
+                            <p>Join Ryan Carmichael and Jason Stefaniak, producers, directors, and founders of the
+                            production team Impolite Company, for an informative workshop. Multiple award winners (including
+                            an Emmy,) Carmichael and Stefaniak will screen film clips by underrepresented and overlooked
+                            minority filmmakers and talk about expression through filmmaking. A hallmark of Impolite Company
+                            is their desire to mentor young people and inspire media literacy.</p>
 
-       <p>12:00-2pm – Film Workshop & Networking – Impolite Production Company</p>
+                            <h5>Time: 2:00 pm - 6:00 pm</h5>
 
-       <p>3pm-5pm – Independent Film Festival – Curated by Point of Order Productions</p>
+                            <p>“Americanos: Latino Life in the United States” (2000) Directors: Susan Todd and Andrew Young. New HD version of this multiple- award winning documentary.</p>
+                            <p>“A Way Out” (2015). Director: Jason Tostevin</p>
+                            <p>“Mother of the Week” (2015). Director: Lee Davis</p>
+                            <p>“Break Away” (2015). Director: Dalton Thorvilson</p>
+                            <p>“Since: The Bombing of Pan Am Flight 103” (2015). Director: Phil Furey</p>
 
-       <p>6pm – Dinner Break</p>
+                            <h5>Time: 8:00 pm</h5>
+                            <h5>Special Selection</h5>
 
-       <p>7pm – Red Carpet reception</p>
+                            <h5>“La Jaula De Oro” (2013). Directed by Diego Quemada-Diez</h5>
+                            <p>The most awarded Mexican film in history -- with over 80 international accolades including
+                            9 Ariel awards and an Un Certain Talent prize from the Cannes Film Festival -- Diego Quemada-
+                            Diez's acclaimed debut feature tells the story of three teenagers from the slums of Guatemala
+                            who travel to the USA in search of a better life. On their journey through Mexico they meet
+                            Chauk, a Tzotzil teen from Chiapas who doesn’t speak Spanish. Travelling together in cargo
+                            trains, walking on the railroad tracks, they will soon have to face a harsh reality. “La Jaula
+                            De Oro” strikes a particularly resonant note for many residents of Peekskill, who are Guatemalan,
+                             Ecuadorian, and Mexican immigrants.</p>
+                            <h2>Sunday May 15</h2>
+                            <h4>The Hudson Valley Center for Contemporary Art (HVCCA) 1701 Main St.</h4>
+                            <h4>The Peekskill Coffee House 101 S Division St.</h4>
+                            <h5>Time: 12:00 pm - 4:00 pm</h5>
+                            <h5>Location: The Hudson Valley Center for Contemporary Art (HVCCA)</h5>
+                            <p>“Last Train to Babylon” (2016). Director: Luis Ayala</p>
+                            <p>“The Usual” (2014). Directors: Robert Cafarelli and Troy Peterson</p>
+                            <p>“Evergreen” (2015). Director: Beatrice Copeland</p>
 
-       <p>8pm – “La Jaula de Oro” – “The Golden Dream” Screening</p>
-       <blockquote><a href="https://www.facebook.com/TheGoldenDreamFilm/?fref=ts"><img src="https://scontent-iad3-1.xx.fbcdn.net/hphotos-xfp1/t31.0-8/1399787_1530389700528950_7031555052061793978_o.jpg" alt="The Golden Dream movie poster"></a>The most awarded Mexican film in history -with over 80 international accolades including
+                            <h5>Time: 5:00 pm - 6:00 pm</h5>
+                            <h5>Location: The Peekskill Coffee House 101 S Division St.</h5>
+                            <p>“The Great American Jukebox” (2011). Director: Andrew Stein</p>
+                            <br><a href="#" class="back-link close">Close</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sponsor/Footer Area start-->
+    <div class="row">
+        <div class="twelve columns">
+            <div class="presented-by">
+                
+            </div>
+        </div>
+    </div>
 
-           9 Ariel awards and the Un Talent Regard from the Cannes Film Festival-- Diego Quemada-
-
-           Diez's acclaimed debut feature tells the story of three teenagers from the slums of Guatemala
-
-           who  travel to the USA in search of a better life. On their journey through Mexico they meet
-
-           Chauk, a Tzotzil teen  from Chiapas who doesn’t speak Spanish. Travelling together in cargo
-
-           trains,  walking on the railroad tracks, they will soon have to face a harsh reality.<br>
-           <a href="http://www.imdb.com/title/tt2042583/">More Info</a>
-
-       </blockquote>
-
-       <p>9:30pm – Latin Music Performance</p>
-   </section>
-    <section id="dl-sched">
-        <form action="http://formspree.io/peekskillfilmfestival@gmail.com" method="POST">
-            <input type="text" required="required" id="name" name="name" placeholder="Hi, what's your name?"/>
-            <input type="email" required="required" id="email" name="_replyto" placeholder="What's your email?"/>
-            <textarea id="info" placeholder="What can we help you with?" name="body" rows="5"></textarea>
-            <input type="text" name="_gotcha" style="display:none" />
-            <input type="hidden" name="_subject" value="New Contact!" />
-            <input type="hidden" name="_next" value="thanks.html" />
-            <input type="submit" value="Send" id="send"/>
-
-        </form>
-    </section>
-</div>
+    <!-- Image Gallery Script -->
+    <script src="js/magnific.js"></script>
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>
