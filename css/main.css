@@ -353,7 +353,7 @@ nav{
 }
 .since-details{
     clear:both;
-    display:inline-block;
+    display:none;
     width:80%;
     padding:1%;
     margin: 5% auto;
@@ -570,10 +570,40 @@ footer{
     .cta{
         height:500px;
     }
+    .since{
+        width:95%;
+    }
+    .since-photo{
+        display:inline-block;
+        width:90%;
+    }
+    .quote{
+        width:90%;
+        padding:2%;
+        display:inline-block;
+        text-align: left;
+    }
+    .since-more, .since-link{
+        margin:0 2%;
+    }
+    .since-details{
+        clear:both;
+        width:97%;
+    }
+    .trailer-img{
+        width:98%;
+        margin:0 auto;
+    }
 }
-@media screen and(max-width:510px){
+@media screen and (max-width:510px){
     .since-details{
         width:95%;
+    }
+}
+@media screen and (max-width:415px){
+    .since-link, .since-more{
+        margin-top:10%;
+        float:none;
     }
 }
 @media screen and (max-width:355px){
