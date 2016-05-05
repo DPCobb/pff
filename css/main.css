@@ -255,13 +255,13 @@ nav{
     margin-top:5%;
 }
 /*----- Location Explore, Featured Films -----*/
-.location-explore, .featured-films, .general-info, .since{
+.location-explore, .featured-films, .general-info, .since, .workshops{
     margin-top:5%;
     margin-bottom:5%;
     color:#dedfe0;
     text-align: center;
 }
-.location-explore h3, .featured-films h3, .general-info h3, .location-wrap h4, .since h3{
+.location-explore h3, .featured-films h3, .general-info h3, .location-wrap h4, .since h3, .workshops h3{
     text-align: center;
     font-weight:700;
     margin-top:5%;
@@ -328,7 +328,7 @@ nav{
 .loc-dir{
     display:none;
 }
-.since{
+.since, .workshops{
     margin:5% auto;
     width:90%;
     padding:2%;
@@ -372,6 +372,37 @@ nav{
 }
 .ilink{
     color:inherit;
+}
+
+.workshop-photo{
+    display:inline-block;
+    float:left;
+    width:25%;
+    margin:2%;
+}
+.workshops{
+    text-align: left;
+}
+.workshops p{
+    display:inline-block;
+    width:70%;
+}
+.workshops-more{
+    margin:2% auto;
+    display:none;
+    background:#bfc0c1;
+    color:#3a3d42;
+    padding:2%;
+    width:66%;
+    float:right;
+    clear: both;
+}
+.workshops-more p{
+    width:90%;
+}
+.workshops-more-btn, .workshops-link-btn{
+    margin:2%;
+    float:right;
 }
 
 
@@ -498,6 +529,19 @@ footer{
     .location-wrap table{
         width:100%;
         font-size: 1em;
+    }
+    .workshop-photo{
+        width:50%;
+        float:none;
+        margin:2% auto;
+        display:block;
+    }
+    .workshops, .workshops p{
+        width:95%;
+    }
+    .workshops-more{
+        width:90%;
+        float:none;
     }
 }
 @media screen and (max-width:750px){

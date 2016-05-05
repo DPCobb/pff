@@ -216,6 +216,10 @@ $(document).ready(function(){
     $('.since-more').on('click', function(){
         $('.since-details').slideToggle();
     });
+    $('.workshops-more-btn').on('click', function(){
+        $('.workshops-more').slideToggle();
+    });
+
     $('.trailer-img').on('click', function(){
         $('.trailer').html('<iframe src="https://player.vimeo.com/video/136280706?autoplay=1" width="90%" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><p><a href="https://vimeo.com/136280706" class="ilink">Since: The Bombing of Pan Am Flight 103 - TRAILER (2015)</a> from <a href="https://vimeo.com/user33704380" class="ilink">SINCE 103</a> on <a href="https://vimeo.com" class="ilink">Vimeo</a>.</p>');
     });
