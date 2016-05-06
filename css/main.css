@@ -4,6 +4,10 @@ body{
     background:#3a3d42;
     font-family: 'Open Sans', sans-serif;
 }
+blockquote{
+    font-size: .8em;
+    color:#A4A9AB;
+}
 .button{
     background:#fff;
     border:none;
