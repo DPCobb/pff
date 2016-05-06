@@ -400,9 +400,9 @@ nav{
 .workshops-more p{
     width:90%;
 }
-.workshops-more-btn, .workshops-link-btn{
-    margin:2%;
-    float:right;
+.workshops-link-btn{
+    margin:1% auto;
+
 }
 
 
