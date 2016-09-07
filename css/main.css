@@ -527,11 +527,11 @@ footer{
 }
 .imgView span:first-of-type{
     top:40%;
-    left:10%;
+    left:5%;
 }
 .imgView span:nth-of-type(2){
     top:40%;
-    left:90%;
+    left:95%;
 }
 
 .imgGal li{
@@ -730,6 +730,9 @@ footer{
         max-width:70%;
         height:300px;
     }
+    .imgGal li, .imgGal li img{
+        height:50px;
+    }
 }
 @media screen and (max-width:415px){
     .since-link, .since-more{
@@ -755,5 +758,8 @@ footer{
     }
     .film-info{
         width:98%;
+    }
+    #pff1{
+        display:none;
     }
 }
