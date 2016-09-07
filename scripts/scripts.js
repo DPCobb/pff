@@ -15,6 +15,81 @@ $(document).ready(function(){
             }
         })
     });
+    /*-------------------------
+Image Gallery
+---------------------------*/
+    // Set needed Vars
+    var index = $('.selected'), currentIndex = $('.imgGal li').index(index), imgs = $('.imgGal li').find('img'), totImg = imgs.length, modalHeight = $(window).height(), firstImg = $('.selected').find('img').attr('src');
+
+    // Set the Modal height to the height of the current Window
+    $('.modal').css('height', modalHeight);
+    // Set the Modal Img height to 80% of the height of the window
+    $('.modalView img').css('height', modalHeight * .80);
+
+    // Set initial img in Viewer
+    $('.viewer').attr('src', firstImg);
+
+    // Function To Change Img on left/right arrow click
+    function changeImg(){
+        // Set currentImg to currentIndex
+        var currentImg = imgs.eq(currentIndex);
+        // Set src Var to currentImg's src
+        var src = currentImg.attr('src');
+        // Remove selected class from previous li
+        $('.selected').removeClass('selected');
+        // Add selected class to new li
+        currentImg.closest('li').addClass('selected');
+        // fade out current image with complete function
+        $('.viewer').fadeOut(function(){
+            // set new img src and fade in
+            $('.viewer').attr('src', src).fadeIn();
+        });
+    };
+
+    // Similar to changeImg, but changes on thumbnail click
+    $('.imgGal img').on('click', function(e){
+        e.preventDefault();
+        var newSrc = $(this).attr('src');
+        $('.selected').removeClass('selected');
+        $(this).closest('li').addClass('selected');
+        $('.viewer').fadeOut(function(){
+            $('.viewer').attr('src', newSrc).fadeIn();
+        });
+        var updateIndex = $('.selected');
+        currentIndex = $('.imgGal li').index(updateIndex);
+    });
+
+    // Change currentIndex on left/right arrow click
+    $('.next').on('click', function(){
+        currentIndex +=1;
+        if (currentIndex > totImg - 1){
+            currentIndex=0;
+        }
+        changeImg();
+    });
+    $('.prev').on('click',function() {
+        currentIndex -= 1;
+        if (currentIndex < 0) {
+            currentIndex = totImg - 1;
+        }
+        changeImg();
+    });
+
+    // Click event for clicking on viewer image
+    $('.viewer').on('click', function(e){
+        e.preventDefault();
+        // set the newSrc value
+        var newSrc = $(this).attr('src');
+        // Set modal image src to newSrc
+        $('.modalView img').attr('src', newSrc)
+        // Fade in Modal
+        $('.modal').fadeIn();
+    });
+    // Close Modal on Screen Click
+    $('.modal').on('click', function(e){
+        $(this).fadeOut();
+    });
+
     $('.parent-container').magnificPopup({
         delegate: 'a', // child items selector, by clicking on it popup will open
         type: 'image',
