@@ -1,1 +1,342 @@
-<div class="white-popup">Dynamically created popup</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Peekskill Film Festival</title>
+    <link rel="stylesheet" href="css/magnific.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <meta name="description" content="Peekskill Film Festival information" />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" value="Check out the Peekskill Film Festival">
+    <meta name="twitter:site" content="@PKfilmfest ">
+    <meta name="twitter:title" content="Peekskill Film Festival">
+    <meta property="og:image" content="http://peekskillfilmfestival.org/images/pff.png"/>
+    <meta property="og:title" content="Peekskill Film Festival"/>
+    <meta property="og:url" content="http://peekskillfilmfestival.org"/>
+    <meta property="og:description" content="Come check out the Peekskill Film Festival!"/>
+    <script type="application/ld+json">
+    {
+       "@context" : "http://schema.org",
+       "@type" : "Festival",
+       "name" : "Peekskill Film Festival",
+       "image" : "http://www.peekskillfilmfestival.org/images/pff.png",
+       "startDate" : "2016-05-13T18:00",
+       "endDate" : "2016-05-14T22:00",
+       "typicalAgeRange" : "All Ages",
+       "location" : {
+           "@type" : "EventVenue",
+           "name" : "The Paramount Theater",
+           "address" : "1008 Brown St. Peekskill, NY 10566"
+           },
+       "offers" : {
+           "@type" : "Offer",
+           "url" : "http://www.brownpapertickets.com/event/2498782",
+           "price" : "10",
+           "priceCurrency" : "USD"
+       },
+       "workPerformed": [{
+           "@type": "CreativeWork",
+           "name": "But Not For Me"
+       },
+       {
+           "@type": "CreativeWork",
+           "name": "The Golden Dream"
+       }]
+   }
+
+   </script>
+   <style>
+        .testcta{
+            background:url('work.jpg')top center;
+            background-size:cover;
+            height:800px;
+        }
+   </style>
+</head>
+<body>
+    <!-- HEADER starts -->
+    <header>
+        <div class="row">
+            <div class="twelve columns">
+                <img src="images/pff.png" alt="Peekskill Film Festival Logo" class="logo">
+                <h1>Peekskill Film Festival</h1><br>
+                <h5>May 11-15</h5>
+                <a href="https://www.facebook.com/peekskillfilmfest" target="_blank" class="social"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/PKfilmfest" target="_blank" class="social"><i class="fa fa-twitter"></i></a>
+                <a href="https://instagram.com/peekskillfilmfest/" target="_blank" class="social"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER ends -->
+    <!-- NAV starts -->
+    <nav>
+        <!-- Main Nav -->
+        <div class="row">
+            <div class="twelve columns">
+                <ul class="navbar large">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Festival</a>
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="sched.html">Schedule</a></li>
+                            <li><a href="films.html">Films</a></li>
+                            <li><a href="workshopreg.html">Workshop Registration</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Info</a>
+                        <ul>
+                            <li><a href="location.html">Location</a></li>
+                            <li><a href="sponsor.html">Sponsors</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact</a>
+                        <ul>
+                            <li><a href="donate.html">Donate</a></li>
+                            <li><a href="newsponsor.html">Become a Sponsor</a></li>
+                            <li><a href="contact.html">General</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Share</a>
+                        <ul class="sub">
+                            <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.peekskillfilmfestival.org" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+                            <li><a href="https://twitter.com/home?status=Check%20out%20the%20Peekskill%20Film%20Festival!%20http%3A//www.peekskillfilmfestival.org" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+                            <li><a href="https://plus.google.com/share?url=http%3A//www.peekskillfilmfestival.org" target="_blank"><i class="fa fa-google-plus"></i> Google+</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Nav for screens under 750px -->
+        <div class="row">
+            <div class="twelve columns">
+                <ul class="navbar mobile" id="smallNav">
+                    <li><span class="threeline">&#9776;</span>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">Festival &#x2304;</a>
+                                <ul>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="sched.html">Schedule</a></li>
+                                    <li><a href="films.html">Films</a></li>
+                                    <li><a href="workshopreg.html">Workshop Registration</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Info &#x2304;</a>
+                                <ul>
+                                    <li><a href="location.html">Location</a></li>
+                                    <li><a href="sponsor.html">Sponsors</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Contact &#x2304;</a>
+                                <ul>
+                                    <li><a href="donate.html">Donate</a></li>
+                                    <li><a href="newsponsor.html">Become a Sponsor</a></li>
+                                    <li><a href="contact.html">General</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Share</a>
+                                <ul class="sub">
+                                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.peekskillfilmfestival.org" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+                                    <li><a href="https://twitter.com/home?status=Check%20out%20the%20Peekskill%20Film%20Festival!%20http%3A//www.peekskillfilmfestival.org" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+                                    <li><a href="https://plus.google.com/share?url=http%3A//www.peekskillfilmfestival.org" target="_blank"><i class="fa fa-google-plus"></i> Google+</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- NAV ends -->
+    <!--- CTA starts -->
+    <div class="testcta">
+        <div class="row">
+            <div class="twelve columns">
+                <h2>Thank You!</h2>
+                <h5>For making our film festival a success.</h5>
+            </div>
+        </div>
+    </div>
+    <!-- CTA ends -->
+    <!-- MAIN Body Container start -->
+    <div class="container">
+        <div class="row">
+            <div class="location-explore">
+                <div class="twelve columns">
+                    <h3>Explore the Event Locations</h3>
+                </div>
+                <div class="row">
+                    <div class="twelve columns centered">
+                        <a href="#" class="location-highlight paramountp">
+                            <h6 class="loc">The Paramount Theater</h6>
+                        </a>
+                        <a href="#" class="location-highlight fieldp">
+                            <h6 class="loc">Peekskill Coffee House</h6>
+                        </a>
+                        <a href="#" class="location-highlight hvccap">
+                            <h6 class="loc">Hudson Valley Center for Contemporary Art</h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="featured-films">
+                <div class="twelve columns">
+                    <h3>Discover our Featured Films</h3>
+                    <h5><a href="sched.html" title="link to full schedule" class="button">View the Schedule</a></h5>
+                    <img src="images/butnotforme.jpg" alt="But Not For Me" class="film-img" id="butnotforme-img" data-display="butnotforme"/>
+                    <img src="images/goldendream.jpg" alt="But Not For Me" class="film-img" id="goldendream-img" data-display="goldendream"/>
+                    <div id="butnotforme" class="film-info round">
+                        <h4>But Not For Me</h4>
+                        <p>“But Not For Me" is a Brooklyn Film Festival winner (Audience Award and Best Original Score). A
+                        struggling, disillusioned young writer discovers a fledgling sense of hope when a beautiful violinist
+                        moves in next door and agrees to perform with him on the city streets. Q and A with director Ryan
+                        Carmichael and producer Ryan Stefaniak to follow. </p>
+                        <iframe class="trailer centered" width="95%" height="300" src="https://www.youtube.com/embed/IwczTe_ML4M" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div id="goldendream" class="film-info round">
+                        <h4>The Golden Dream</h4>
+                        <p>The most awarded Mexican film in history -with over 80 international accolades including 9
+                            Ariel awards and the Un Talent Regard from the Cannes Film Festival-- Diego Quemada- Diez's
+                            acclaimed debut feature tells the story of three teenagers from the slums of Guatemala who
+                            travel to the USA in search of a better life. On their journey through Mexico they meet
+                            Chauk, a Tzotzil teen from Chiapas who doesn’t speak Spanish. Travelling together in cargo
+                            trains, walking on the railroad tracks, they will soon have to face a harsh reality.</p>
+                        <iframe class="trailer centered" width="95%" height="300" src="https://www.youtube.com/embed/GBBNmC2JWGU" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="twelve columns">
+                <div class="since">
+                    <h3>Learn About Our Special Screening</h3>
+                    <img src="images/since.jpg" alt="Since poster" class="since-photo"/>
+                    <p class="quote">"I am so honored that this film will be coming to the Hudson River Valley for the 1st
+                        Annual Peekskill Film Festival. This story has such a deep local connection as many of Pan Am Flight
+                        103's victims and their families lived in the tri-state area. Bringing this film to this festival is a
+                        significant step forward to properly memorializing the unwilling sacrifice of some of our neighbors to
+                        this brutal terrorist attack. Pan Am Flight 103 has largely been forgotten by the public, and this
+                        film's goal is to help give it its proper due in the pages of history."<br> - Director Phil Furey
+                        <br><br><button class="button since-more">Learn More</button>
+                        <a href="http://www.since103.com/" class="button since-link">Visit the Website</a>
+                    </p>
+                        <div class="since-details round">
+                            <h4>Since: The Bombing of Pan Am Flight 203 (2015)</h4>
+                            <h5>Saturday May 14 at 5:30</h5>
+                            <h5>Director Phil Furey</h5>
+                            <p>The 1988 bombing of Pan Am Flight 103 over Lockerbie, Scotland, killed 270 innocent
+                                people and began the new age of terrorism. Bound together in tragedy, the victim's
+                                relatives fought for justice, only to watch it unravel for Libyan oil.</p>
+                                <span class="trailer">
+                                    <img src="images/sincevideo.png" alt="since trailer" class="trailer-img"/>
+                                </span>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="twelve columns">
+                <div class="workshops">
+                    <h3>Foley Workshop</h3>
+                    <img src="images/apost.jpg" alt="Alchemy Post Sound logo" class="workshop-photo"/>
+                    <p>Have you ever been interested into what goes into making a film sound the way it does? Peekskill
+                    Film Festival Presents a Foley Workshop with Leslie Bloome of Alchemy Post Sound Studios. The 90
+                    minute workshop will include a live Foley demonstration seeing how film sounds before and after Foley
+                    is added and then will be followed by a Q&A.  Please sign up for this workshop <a href="workshopreg.html" title="Workshop Registration">Click Here to
+                    Register</a> on Thursday May 12th at 7:30pm at Alchemy Post Sound located at The Hat Factory.</p>
+                    <p>For over 20 years, Leslie Bloome has worked as an independent Foley Artist at many of the
+                    industry’s premiere Foley stages including Sony Picture Studios in Culver City, The Saul Zaentz
+                    Center in Berkley as well as c5 inc and Soundtrack on the East Coast. Over the years, he has
+                    accumulated over 250 feature film, TV, animation and gaming credits.</p>
+                    <p>Leslie has worked on several Academy Award nominated films including Still Alice, The Apostle,
+                    and Transamerica. Recently, he was nominated for an Emmy for his Foley on The American Experience:
+                    The Jesse Owens Story.
+                    <br><br><a href="workshopreg.html" title="Workshop Registration" class="button workshops-link-btn">Register</a></p>
+                    <h3>Impolite Company Workshop</h3>
+                    <img src="images/ImpoliteCO.jpg" alt="ImpoliteCo Logo" class="workshop-photo"/>
+                    <p>Saturday, May 14 at The Paramount Hudson Valley Theater from 12-1:00 PM, join Ryan Carmichael and
+                    Jason Stefaniak, producers, directors, and founders of the production team Impolite Company, for an
+                    informative workshop.  Multiple award winners (including an Emmy,) Carmichael and Stefaniak will
+                    screen film clips by underrepresented and overlooked minority filmmakers and talk about expression
+                    through filmmaking. A hallmark of Impolite Company is their desire to mentor young people and
+                    inspire media literacy.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="general-info centered">
+                <h3>Stay Up to Date</h3>
+                <div class="row">
+                    <div class="four columns">
+                        <div class="events">
+                            <!--<h4>Events and Workshops</h4>
+                            <h5>Friday May 13th</h5>
+                            <p>9:30pm –Live performance of "20something" by  Marcus Carl Franklin followed by Q&A with "But Not For Me" Writer/Director Ryan Carmichael and Producer Jason Stefaniak.</p>
+                            <h5>Saturday May 14th</h5>
+                            <p>12:00-2pm – Film Workshop & Networking – Impolite Production Company</p>
+                            <a href="workshopreg.html" target="_blank" class="button">Register Now!</a>-->
+                            <img src="images/dust.jpg" alt="When the dust settles image" class="flyer-sm"/>
+
+                        </div>
+                    </div>
+                    <div class="four columns">
+                        <div class="updates">
+                            <a class="twitter-timeline" href="https://twitter.com/PKfilmfest" data-widget-id="663134995448467456" data-chrome="nofooter noborders noheader noborders" data-tweet-limit="2">Tweets by @PKfilmfest</a>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                        </div>
+                    </div>
+                    <div class="four columns">
+                        <div class="info">
+                            <img src="images/pfinal.jpg" alt="flyer" class="flyer-sm"/>
+                            <A HREF="http://www.brownpapertickets.com/event/2498782" class="ticketbtn"><IMG SRC="http://www.brownpapertickets.com/g/6/BPT_buy_tickets_large.png" BORDER=0></A>
+                            <a href="newsponsor.html" class="button set">Become a Sponsor</a>
+                            <br><a href="https://www.facebook.com/peekskillfilmfest" target="_blank" class="social"><i class="fa fa-facebook"></i></a>
+                            <a href="https://twitter.com/PKfilmfest" target="_blank" class="social"><i class="fa fa-twitter"></i></a>
+                            <a href="https://instagram.com/peekskillfilmfest/" target="_blank" class="social"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Body Container end -->
+    <!-- Sponsor/Footer Area start-->
+    <div class="row">
+        <div class="twelve columns">
+            <div class="presented-by">
+                <h4>The Peekskill Film Festival is brought to you by</h4>
+                <img src="images/paramount.png" alt="Paramount Theater Logo" class="logo-img"/>
+                <img src="images/field 2.jpg" alt="Field Library Logo" class="logo-img"/>
+                <h6>With generous support from our sponsors</h6>
+                <img src="images/dcfb.png" alt="DCWebDev Logo" class="logo-img dc"/>
+                <img src="images/ImpoliteCO.jpg" alt="ImpoliteCo Logo" class="logo-img"/>
+                <img src="images/logo-entergy-reg.gif" alt="Entergy Logo" class="logo-img"/>
+                <img src="images/pointoforder.jpg" alt="Point Of Order Logo" class="logo-img"/>
+                <img src="images/wcc.jpg" alt="WCC Logo" class="logo-img"/>
+                <img src="images/HVCCA.png" alt="HVCCA Logo" class="logo-img"/>
+                <img src="images/pcoffee.jpg" alt="Peekskill Coffee House Logo" class="logo-img"/>
+                <img src="images/Arthurweeks.jpg" alt="Arthur Weeks Logo" class="logo-img"/>
+                <img src="images/apost.jpg" alt="Alchemy Post Logo" class="logo-img"/>
+                <footer>
+                    &copy; 2016 Peekskill Film Festival | Website built by <a href="http://www.daniel-cobb.com" target="_blank">DCWebDev</a>
+                </footer>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Gallery Script -->
+    <script src="js/magnific.js"></script>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
