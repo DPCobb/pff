@@ -553,7 +553,7 @@ footer{
     border:1px solid #c4892f;
 }
 .imgView img{
-    max-width:75%;
+    max-width:70%;
     height:500px;
 }
 
@@ -725,6 +725,10 @@ footer{
 @media screen and (max-width:510px){
     .since-details{
         width:95%;
+    }
+    .imgView img{
+        max-width:70%;
+        height:300px;
     }
 }
 @media screen and (max-width:415px){
